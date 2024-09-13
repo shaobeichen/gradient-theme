@@ -22,7 +22,8 @@
         "Themes"
     ],
     "activationEvents": [
-        "*"
+        "onCommand:extension.enableNeon",
+        "onCommand:extension.disableNeon"
     ],
     "main": "./src/extension.js",
     "contributes": {
