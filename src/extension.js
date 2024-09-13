@@ -60,13 +60,13 @@ function activate(context) {
       if (!isEnabled) {
         // delete synthwave script tag if there
         let output = html.replace(
-          /^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/gm,
+          /^.*(<!-- gradient-theme --><script src="neondreams.js"><\/script><!-- gradient-theme -->).*\n?/gm,
           '',
         )
         // add script tag
         output = html.replace(
           /\<\/html\>/g,
-          `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`,
+          `	<!-- gradient-theme --><script src="neondreams.js"></script><!-- gradient-theme -->\n`,
         )
         output += '</html>'
 
@@ -136,7 +136,7 @@ function uninstall() {
   if (isEnabled) {
     // delete synthwave script tag if there
     let output = html.replace(
-      /^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/gm,
+      /^.*(<!-- gradient-theme --><script src="neondreams.js"><\/script><!-- gradient-theme -->).*\n?/gm,
       '',
     )
     fs.writeFileSync(htmlFile, output, 'utf-8')

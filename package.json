@@ -60,7 +60,7 @@
                 "gradient-theme.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                    "description": "Disable the glow effect, but show gradient-theme editor chrome updates"
                 }
             }
         }
