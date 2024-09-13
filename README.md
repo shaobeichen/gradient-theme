@@ -10,7 +10,7 @@ No, I don't remember it either, but with this experimental theme we can go there
 
 **As of v0.1.0, no external extensions are needed to activate the glow effect!**
 
-![Neon glowing text](./theme.jpg)
+![Neon glowing text](./theme.png)
 
 This colour scheme is influenced by the music and the cover artwork of modern Synthwave bands like FM-84, Timecop 1983 and The Midnight. By association, that means I've also taken heavy influence from the excellent [retro-tinged artwork of James White](https://signalnoise.com/) (check out his work, it's awesome).
 
