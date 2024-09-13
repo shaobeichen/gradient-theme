@@ -2,7 +2,7 @@
     "name": "gradient-theme",
     "displayName": "Gradient Theme",
     "description": "A Gradient Theme",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "shaobeichen",
     "publisher": "shaobeichen",
     "icon": "icon.png",
@@ -22,8 +22,7 @@
         "Themes"
     ],
     "activationEvents": [
-        "onCommand:gradient-theme.enableNeon",
-        "onCommand:gradient-theme.disableNeon"
+        "*"
     ],
     "main": "./src/extension.js",
     "contributes": {
@@ -41,23 +40,23 @@
         ],
         "commands": [
             {
-                "command": "gradient-theme.enableNeon",
+                "command": "extension.enableNeon",
                 "title": "Gradient Theme: Enable Neon Dreams"
             },
             {
-                "command": "gradient-theme.disableNeon",
+                "command": "extension.disableNeon",
                 "title": "Gradient Theme: Disable Neon Dreams"
             }
         ],
         "configuration": {
             "title": "Gradient Theme",
             "properties": {
-                "gradient-theme.brightness": {
+                "gradient_theme.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "gradient-theme.disableGlow": {
+                "gradient_theme.disableGlow": {
                     "type": "boolean",
                     "default": false,
                     "description": "Disable the glow effect, but show gradient-theme editor chrome updates"

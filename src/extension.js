@@ -10,7 +10,7 @@ function activate(context) {
   this.extensionName = 'shaobeichen.gradient-theme'
   this.cntx = context
 
-  const config = vscode.workspace.getConfiguration('gradient-theme')
+  const config = vscode.workspace.getConfiguration('gradient_theme')
 
   let disableGlow = config && config.disableGlow ? !!config.disableGlow : false
 
@@ -23,7 +23,7 @@ function activate(context) {
     .toUpperCase()
   let neonBrightness = parsedBrightness
 
-  let disposable = vscode.commands.registerCommand('gradient-theme.enableNeon', function () {
+  let disposable = vscode.commands.registerCommand('extension.enableNeon', function () {
     const isWin = /^win/.test(process.platform)
     const appDir = path.dirname(require.main.filename)
     const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
@@ -104,7 +104,7 @@ function activate(context) {
     }
   })
 
-  let disable = vscode.commands.registerCommand('gradient-theme.disableNeon', uninstall)
+  let disable = vscode.commands.registerCommand('extension.disableNeon', uninstall)
 
   context.subscriptions.push(disposable)
   context.subscriptions.push(disable)
