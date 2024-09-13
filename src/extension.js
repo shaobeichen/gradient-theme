@@ -7,12 +7,14 @@ const diff = require('semver/functions/diff')
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+  vscode.window.showInformationMessage('1')
   this.extensionName = 'shaobeichen.gradient-theme'
   this.cntx = context
 
   const config = vscode.workspace.getConfiguration('gradient_theme')
 
   let disableGlow = config && config.disableGlow ? !!config.disableGlow : false
+  vscode.window.showInformationMessage('2')
 
   let brightness = parseFloat(config.brightness) > 1 ? 1 : parseFloat(config.brightness)
   brightness = brightness < 0 ? 0 : brightness
@@ -23,7 +25,11 @@ function activate(context) {
     .toUpperCase()
   let neonBrightness = parsedBrightness
 
+  vscode.window.showInformationMessage('3')
+
   let disposable = vscode.commands.registerCommand('gradient_theme.enableNeon', function () {
+    vscode.window.showInformationMessage('6')
+
     const isWin = /^win/.test(process.platform)
     const appDir = path.dirname(require.main.filename)
     const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
@@ -106,8 +112,12 @@ function activate(context) {
 
   let disable = vscode.commands.registerCommand('gradient_theme.disableNeon', uninstall)
 
+  vscode.window.showInformationMessage('4')
+
   context.subscriptions.push(disposable)
   context.subscriptions.push(disable)
+
+  vscode.window.showInformationMessage('5')
 }
 exports.activate = activate
 
