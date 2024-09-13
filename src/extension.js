@@ -23,7 +23,7 @@ function activate(context) {
     .toUpperCase()
   let neonBrightness = parsedBrightness
 
-  let disposable = vscode.commands.registerCommand('extension.enableNeon', function () {
+  let disposable = vscode.commands.registerCommand('gradient_theme.enableNeon', function () {
     const isWin = /^win/.test(process.platform)
     const appDir = path.dirname(require.main.filename)
     const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
@@ -104,7 +104,7 @@ function activate(context) {
     }
   })
 
-  let disable = vscode.commands.registerCommand('extension.disableNeon', uninstall)
+  let disable = vscode.commands.registerCommand('gradient_theme.disableNeon', uninstall)
 
   context.subscriptions.push(disposable)
   context.subscriptions.push(disable)

@@ -2,7 +2,7 @@
     "name": "gradient-theme",
     "displayName": "Gradient Theme",
     "description": "A Gradient Theme",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "shaobeichen",
     "publisher": "shaobeichen",
     "icon": "icon.png",
@@ -22,30 +22,30 @@
         "Themes"
     ],
     "activationEvents": [
-        "onCommand:extension.enableNeon",
-        "onCommand:extension.disableNeon"
+        "onCommand:gradient_theme.enableNeon",
+        "onCommand:gradient_theme.disableNeon"
     ],
     "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "gradient-dracula-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/dracula-theme.json"
-            },
-            {
-                "label": "gradient-bearded-theme-arc",
+                "label": "Gradient Bearded Theme Arc",
                 "uiTheme": "vs-dark",
                 "path": "./themes/bearded-theme-arc.json"
+            },
+            {
+                "label": "Gradient Dracula Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dracula-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "extension.enableNeon",
+                "command": "gradient_theme.enableNeon",
                 "title": "Gradient Theme: Enable Neon Dreams"
             },
             {
-                "command": "extension.disableNeon",
+                "command": "gradient_theme.disableNeon",
                 "title": "Gradient Theme: Disable Neon Dreams"
             }
         ],
