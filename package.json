@@ -29,14 +29,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "gradient-bearded-theme-arc",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-arc.json"
-            },
-            {
                 "label": "gradient-dracula-theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/dracula-theme.json"
+            },
+            {
+                "label": "gradient-bearded-theme-arc",
+                "uiTheme": "vs-dark",
+                "path": "./themes/bearded-theme-arc.json"
             }
         ],
         "commands": [
@@ -64,8 +64,5 @@
                 }
             }
         }
-    },
-    "dependencies": {
-        "semver": "^7.1.1"
     }
 }
