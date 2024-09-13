@@ -1,6 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const vscode = require('vscode')
+const diff = require('semver/functions/diff')
 
 /**
  * @param {vscode.ExtensionContext} context
