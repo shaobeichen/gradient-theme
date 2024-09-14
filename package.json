@@ -1,66 +1,60 @@
 {
-    "name": "gradient-theme",
-    "displayName": "Gradient Theme",
-    "description": "A Gradient Theme",
-    "version": "0.1.4",
-    "author": "shaobeichen",
-    "publisher": "shaobeichen",
+    "name": "synthwave-vscode",
+    "displayName": "SynthWave '84",
+    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
+    "version": "0.1.15",
+    "author": "Robb Owen",
+    "publisher": "RobbOwen",
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/shaobeichen/gradient-theme"
+        "url": "https://github.com/robb0wen/synthwave-vscode"
     },
     "engines": {
         "vscode": "^1.33.0"
     },
     "keywords": [
-        "gradient",
-        "theme",
-        "渐变"
+        "retro",
+        "80s"
     ],
     "categories": [
         "Themes"
     ],
     "activationEvents": [
-        "onCommand:gradient_theme.enableNeon",
-        "onCommand:gradient_theme.disableNeon"
+        "onCommand:synthwave84.enableNeon",
+        "onCommand:synthwave84.disableNeon"
     ],
-    "main": "./src/extension",
+    "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "Gradient Bearded Theme Arc",
+                "label": "SynthWave '84",
                 "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-arc.json"
-            },
-            {
-                "label": "Gradient Dracula Theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/dracula-theme.json"
+                "path": "./themes/synthwave-color-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "gradient_theme.enableNeon",
-                "title": "Gradient Theme: Enable Neon Dreams"
+                "command": "synthwave84.enableNeon",
+                "title": "Synthwave '84: Enable Neon Dreams"
             },
             {
-                "command": "gradient_theme.disableNeon",
-                "title": "Gradient Theme: Disable Neon Dreams"
+                "command": "synthwave84.disableNeon",
+                "title": "Synthwave '84: Disable Neon Dreams"
             }
         ],
         "configuration": {
-            "title": "Gradient Theme",
+            "title": "Synthwave '84",
             "properties": {
-                "gradient_theme.brightness": {
+                "synthwave84.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "gradient_theme.disableGlow": {
+                "synthwave84.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show gradient-theme editor chrome updates"
+                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
                 }
             }
         }
