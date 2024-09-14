@@ -2,124 +2,126 @@
 
 ![Gradient Theme logo](./banner.png)
 
-中文文档 | [English](./README.md)
+English | [中文文档](./README_zh.md)
 
-# 警告
+# Warning
 
-如果你对 VSCode 已损坏警告提示非常介意的话，**不推荐**使用此主题。
+If you are very concerned about the VSCode "damaged" warning prompt, **it is not recommended** to use this theme.
 
-如果你不想忽略 VSCode 已损坏警告提示的话，请自己考虑好是否要使用此主题。
+If you do not want to ignore the "damaged" warning prompt, please consider carefully whether to use this theme.
 
-老实说，我一开始也是很介意，后来我忽略了已损坏警告提示后，再也不介意了。
+To be honest, I was very mind at first, but after I ignored the "damaged" warning prompt, I no longer cared.
 
-# 灵感
+# Inspiration
 
-有一天我看到了一个自已修改 VSCode 主题 CSS 文件的视频，
+One day, I saw a video where someone modified the VSCode theme's CSS file themselves.
 
-于是我觉得我可以使用相同的方式来制作一个 VSCode 渐变效果 CSS 文件，
+So I thought I could use the same method to create a VSCode gradient effect CSS file,
 
-然后我就开始使用 Custom CSS and JS Loader 插件来加载自定义的渐变 CSS，
+Then I started using Custom CSS and JS Loader plugin to load the custom gradient CSS,
 
-后来许多人觉得我的渐变主题非常好看，希望也能在自己的 VSCode 上能使用它，
+Later, many people thought my gradient theme was very beautiful and wanted to use it on their own VSCode,
 
-但是如果要使用它的话，需要安装插件还需要我给他们一份 CSS 文件，这太麻烦了！
+But to use it, they needed to install a plugin and I had to give them a CSS file, which was too troublesome!
 
-于是我去学习了如何制作一个 VSCode 主题插件，做出了这个渐变色主题插件。
+So I learned how to make a VSCode theme plugin and made this gradient theme plugin.
 
-# 主题
+# Themes
 
 ### Gradient Bearded Theme Arc
 
 ![Gradient Theme text](./gradient-bearded-theme-arc.png)
 
-我基于 [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) 里 Arc 主题，给它添加了渐变效果。
+I added a gradient effect to the Arc theme in [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme).
 
 ### Gradient Dracula Theme
 
 ![Gradient Theme text](./gradient-dracula-theme.png)
 
-我基于 [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) ，给它添加了渐变效果。
+I added a gradient effect to [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
-## 安装
+# Installation
 
-- 在 [ VSCode Marketplace ](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme) 安装主题。
+- Install the theme from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme).
 
-  或者
+  Or
 
-- 在 VSCode 中搜索 Gradient Theme、gradient-theme 关键字后，进行安装。
+- Search for Gradient Theme or gradient-theme in VSCode and install it.
 
-安装后可以选择基础主题，**此时并没有渐变效果**，如果想要开启渐变效果的话，请看下一步。
+After installation, you can choose the base theme, **there is no gradient effect at this time**, if you want to enable the gradient effect, please see the next step.
 
-**为什么没有直接开启渐变效果呢？**
+**Why isn't the gradient effect enabled directly?**
 
-因为开启渐变效果会对 VSCode 的核心文件进行修改，会有 VSCode 已损坏的警告提示，尽管可以移除警告提示，但还是一部分人不希望这样，在底部会有详细说明。
+Because enabling the gradient effect will modify the core files of VSCode, which will be interpreted as "damaged" by VSCode, and you may see a warning prompt when restarting the editor, but you can safely ignore this message.
 
-## 渐变效果
+If you don't want to ignore the warning prompt, please consider carefully whether to use this theme.
 
-### 开启渐变
+# Gradient Effects
+
+### Enable Gradient
 
 ![enable command](./command.png)
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。
+You can enable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: enable xxxx**".
 
-(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
+(Here xxxx represents the base theme you have chosen, whatever base theme you have chosen, use the corresponding command)
 
-### 关闭渐变
+### Disable Gradient
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: disable xxxx**”来实现此操作。
+You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: disable xxxx**".
 
-(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
+(Here xxxx represents the base theme you have chosen, whatever base theme you have chosen, use the corresponding command)
 
-### 重启编辑器
+### Restart Editor
 
 ![restart](./restart.png)
 
-在 开启渐变效果 或 关闭渐变效果 后，会有一条提示，点击重启编辑器后，才能看到渐变效果。
+After enabling or disabling the gradient effect, there will be a prompt, click to restart the editor to see the gradient effect.
 
-## 请注意
+# Please Note
 
-### 1. 忽略已损坏警告提示
+### 1. Ignore the "Damaged" Warning Prompt
 
-请注意，由于开启渐变效果会对 VSCode 的核心文件进行修改，VSCode 会将其解释为核心文件“已损坏”，你可能会在重启编辑器时看到这样一条警告提示，你可以安全地忽略此消息。
+Please note that since enabling the gradient effect modifies the core files of VSCode, VSCode will interpret it as a "damaged" core file, and you may see a warning prompt when restarting the editor, which you can safely ignore.
 
-如果你不想忽略警告提示的话，请自己考虑好是否要使用此主题。
+If you do not want to ignore the warning prompt, please consider carefully whether to use this theme.
 
-### 2. 更新 VSCode
+### 2. Update VSCode
 
-请注意，每次更新 VSCode 后，都需要重复步骤以重新开启渐变效果。
+Please note that after each update of VSCode, you need to repeat the steps to re-enable the gradient effect.
 
-### 3. 更换其他主题
+### 3. Switch to Other Themes
 
-请注意，如果开启了渐变效果，此时你想更换其他主题，可以先关闭渐变效果，再选择其他主题，否则渐变主题会影响到其他主题的颜色。
+Please note that if you have enabled the gradient effect and want to switch to another theme, you can first disable the gradient effect and then choose another theme, otherwise the gradient theme will affect the colors of other themes.
 
-## 兼容性
+# Compatibility
 
-这个主题仍然在不断更新优化。我主要使用 HTML、CSS、JS、TS、Vue、React 等进行开发，因此，虽然这些语言和框架看起来不错，但其他语言和框架可能会出现主题并不合适的情况。如果你发现任何明显的问题，可以提出一个问题，我会尽快解决。
+This theme is still being updated and optimized. I mainly use HTML, CSS, JS, TS, Vue, React, etc. for development, so although these languages and frameworks look good, other languages and frameworks may not be suitable for the theme. If you find any obvious problems, you can raise an issue, and I will resolve it as soon as possible.
 
-## 如何贡献
+# How to Contribute
 
-很高兴你对这个主题感到兴趣，欢迎任何合适的贡献。
+I'm glad you're interested in this theme, and any suitable contribution is welcome.
 
-1. Fork 并 Clone 此仓库`git clone https://github.com/<YOUR-USERNAME>/gradient-theme`
-2. 为你的更改创建一个分支`git checkout-b my-new-feature`
-3. 在 VSCode 中打开*gradient-theme*文件夹
-4. 修改你想修改的文件
-5. 在 VSCode 中使用 F5 进行调试预览
-6. Commit 并 Push 你的修改
-7. 提交一份 PR ，请注意并非所有建议都能被接受
+1. Fork and Clone this repository `git clone https://github.com/<YOUR-USERNAME>/gradient-theme`
+2. Create a branch for your changes `git checkout -b my-new-feature`
+3. Open the _gradient-theme_ folder in VSCode
+4. Modify the files you want to change
+5. Use F5 in VSCode to preview the debug
+6. Commit and Push your changes
+7. Submit a PR, please note that not all suggestions can be accepted
 
-## 感谢
+# Thanks
 
-感谢 Lun Dev ,让我有了制作这个渐变主题的灵感。 🙏
+Thanks to Lun Dev for inspiring me to create this gradient theme. 🙏
 
 **[Lun Dev](https://www.youtube.com/@lundeveloper)**
 
-感谢以下主题的作者为开源做出贡献。🙏 我在以下主题的基础上为各个主题制作了渐变效果。
+Thanks to the authors of the following themes for their contributions to open source. 🙏 I made gradient effects for each theme based on the following themes.
 
 **[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)**
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
 
-感谢以下主题的作者为开源做出贡献。🙏 我在这个主题的开源代码基础上制作了这个单独的主题，方便大家直接使用。
+Thanks to the authors of the following themes for their contributions to open source. 🙏 I made this standalone theme based on the open source code of this theme, which is convenient for everyone to use directly.
 
 **[SynthWave '84](https://github.com/robb0wen/synthwave-vscode)**
