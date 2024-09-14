@@ -1,10 +1,19 @@
 const path = require('path')
 const fs = require('fs')
 const vscode = require('vscode')
-// const diff = require('semver/functions/diff')
 
-// Returns true if the VS Code version running this extension is below the
-// version specified in the "version" parameter. Otherwise returns false.
+const isWin = /^win/.test(process.platform)
+const appDir = path.dirname(require.main.filename)
+const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
+const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
+const htmlFile =
+  base +
+  (isWin
+    ? '\\' + electronBase + '\\workbench\\workbench.html'
+    : '/' + electronBase + '/workbench/workbench.html')
+
+const enableCommonMessage = `VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
+
 function isVSCodeBelowVersion(version) {
   const vscodeVersion = vscode.version
   const vscodeVersionArray = vscodeVersion.split('.')
@@ -19,161 +28,62 @@ function isVSCodeBelowVersion(version) {
   return false
 }
 
-function uninstall() {
-  var isWin = /^win/.test(process.platform)
-  var appDir = path.dirname(require.main.filename)
-  var base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
-  var electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
-
-  var htmlFile =
-    base +
-    (isWin
-      ? '\\' + electronBase + '\\workbench\\workbench.html'
-      : '/' + electronBase + '/workbench/workbench.html')
-
-  // modify workbench html
-  const html = fs.readFileSync(htmlFile, 'utf-8')
-
-  // check if the tag is already there
-  const isEnabled = html.includes('neondreams.js')
-
-  if (isEnabled) {
-    // delete synthwave script tag if there
-    let output = html.replace(
-      /^.*(<!-- gradient-theme --><script src="neondreams.js"><\/script><!-- gradient-theme -->).*\n?/gm,
-      '',
-    )
-    fs.writeFileSync(htmlFile, output, 'utf-8')
-
-    vscode.window
-      .showInformationMessage(
-        'Neon Dreams disabled. VS code must reload for this change to take effect',
-        { title: 'Restart editor to complete' },
-      )
-      .then(function (msg) {
-        vscode.commands.executeCommand('workbench.action.reloadWindow')
-      })
-  } else {
-    vscode.window.showInformationMessage("Neon dreams isn't running.")
-  }
+function showReloadMessage(message) {
+  vscode.window
+    .showInformationMessage(message, { title: 'Restart editor to complete' })
+    .then(function (msg) {
+      vscode.commands.executeCommand('workbench.action.reloadWindow')
+    })
 }
 
-/**
- * @param {vscode.ExtensionContext} context
- */
+function registerCommand(context, name, filename) {
+  const prefix = 'extension'
+  const enablePrefix = 'enable'
+  const disablePrefix = 'disable'
+  const enableCommand = prefix + '.' + enablePrefix + name
+  const disableCommand = prefix + '.' + disablePrefix + name
+
+  const enableMessage = name + ' ' + enablePrefix + 'd. ' + enableCommonMessage
+  const disableMessage = name + ' ' + disablePrefix + 'd. ' + enableCommonMessage
+
+  const tagAttr = 'data-gradient-theme-id'
+
+  const disposable = vscode.commands.registerCommand(enableCommand, function () {
+    const html = fs.readFileSync(htmlFile, 'utf-8')
+    const css = fs.readFileSync(__dirname + '/' + filename + '/index.css', 'utf-8')
+    const js = fs.readFileSync(__dirname + '/' + filename + '/index.js', 'utf-8')
+    const output = html + `<style ${tagAttr}>${css}</style>` + `<script ${tagAttr}>${js}</script>`
+    fs.writeFileSync(htmlFile, output, 'utf-8')
+
+    showReloadMessage(enableMessage)
+  })
+
+  const disable = vscode.commands.registerCommand(disableCommand, function () {
+    const html = fs.readFileSync(htmlFile, 'utf-8')
+    const regex = new RegExp(
+      `<style[^>]*${tagAttr}[^>]*>.*?</style>|<script[^>]*${tagAttr}[^>]*>.*?</script>`,
+      'gs',
+    )
+    const output = html.replace(regex, '')
+    fs.writeFileSync(htmlFile, output, 'utf-8')
+
+    showReloadMessage(disableMessage)
+  })
+
+  context.subscriptions.push(disposable)
+  context.subscriptions.push(disable)
+}
+
 function activate(context) {
   this.extensionName = 'shaobeichen.gradient-theme'
   this.cntx = context
 
-  const config = vscode.workspace.getConfiguration('gradient_theme')
-
-  let disableGlow = config && config.disableGlow ? !!config.disableGlow : false
-
-  let brightness = parseFloat(config.brightness) > 1 ? 1 : parseFloat(config.brightness)
-  brightness = brightness < 0 ? 0 : brightness
-  brightness = isNaN(brightness) ? 0.45 : brightness
-
-  const parsedBrightness = Math.floor(brightness * 255)
-    .toString(16)
-    .toUpperCase()
-  let neonBrightness = parsedBrightness
-
-  let disposable = vscode.commands.registerCommand('gradient_theme.enableNeon', function () {
-    vscode.window.showInformationMessage('6')
-
-    const isWin = /^win/.test(process.platform)
-    const appDir = path.dirname(require.main.filename)
-    const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
-    const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
-
-    const htmlFile =
-      base +
-      (isWin
-        ? '\\' + electronBase + '\\workbench\\workbench.html'
-        : '/' + electronBase + '/workbench/workbench.html')
-
-    const templateFile =
-      base +
-      (isWin
-        ? '\\' + electronBase + '\\workbench\\neondreams.js'
-        : '/' + electronBase + '/workbench/neondreams.js')
-
-    try {
-      // const version = context.globalState.get(`${context.extensionName}.version`);
-
-      // generate production theme JS
-      const chromeStyles = fs.readFileSync(__dirname + '/css/editor_chrome.css', 'utf-8')
-      const jsTemplate = fs.readFileSync(__dirname + '/js/theme_template.js', 'utf-8')
-      const themeWithGlow = jsTemplate.replace(/\[DISABLE_GLOW\]/g, disableGlow)
-      const themeWithChrome = themeWithGlow.replace(/\[CHROME_STYLES\]/g, chromeStyles)
-      const finalTheme = themeWithChrome.replace(/\[NEON_BRIGHTNESS\]/g, neonBrightness)
-      fs.writeFileSync(templateFile, finalTheme, 'utf-8')
-
-      // modify workbench html
-      const html = fs.readFileSync(htmlFile, 'utf-8')
-
-      // check if the tag is already there
-      const isEnabled = html.includes('neondreams.js')
-
-      if (!isEnabled) {
-        // delete synthwave script tag if there
-        let output = html.replace(
-          /^.*(<!-- gradient-theme --><script src="neondreams.js"><\/script><!-- gradient-theme -->).*\n?/gm,
-          '',
-        )
-        // add script tag
-        output = html.replace(
-          /\<\/html\>/g,
-          `	<!-- gradient-theme --><script src="neondreams.js"></script><!-- gradient-theme -->\n`,
-        )
-        output += '</html>'
-
-        fs.writeFileSync(htmlFile, output, 'utf-8')
-
-        vscode.window
-          .showInformationMessage(
-            "Neon Dreams enabled. VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.",
-            { title: 'Restart editor to complete' },
-          )
-          .then(function (msg) {
-            vscode.commands.executeCommand('workbench.action.reloadWindow')
-          })
-      } else {
-        vscode.window
-          .showInformationMessage(
-            'Neon dreams is already enabled. Reload to refresh JS settings.',
-            { title: 'Restart editor to refresh settings' },
-          )
-          .then(function (msg) {
-            vscode.commands.executeCommand('workbench.action.reloadWindow')
-          })
-      }
-    } catch (e) {
-      if (/ENOENT|EACCES|EPERM/.test(e.code)) {
-        vscode.window.showInformationMessage(
-          'Neon Dreams was unable to modify the core VS code files needed to launch the extension. You may need to run VS code with admin privileges in order to enable Neon Dreams.',
-        )
-        return
-      } else {
-        vscode.window.showErrorMessage('Something went wrong when starting neon dreams')
-        return
-      }
-    }
-  })
-
-  let disable = vscode.commands.registerCommand('gradient_theme.disableNeon', uninstall)
-
-  context.subscriptions.push(disposable)
-  context.subscriptions.push(disable)
-
-  vscode.window.showInformationMessage('5')
+  registerCommand(context, 'GradientBeardedThemeArc', 'gradient-bearded-theme-arc')
 }
+
 exports.activate = activate
 
-// this method is called when your extension is deactivated
-function deactivate() {
-  // ...
-}
+function deactivate() {}
 
 module.exports = {
   activate,

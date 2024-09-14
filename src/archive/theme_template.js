@@ -56,8 +56,8 @@
    * @returns {boolean}
    */
   const usingSynthwave = () => {
-    const appliedTheme = document.querySelector('[class*="theme-json"]')
-    const synthWaveTheme = document.querySelector('[class*="RobbOwen-synthwave-vscode-themes"]')
+    const appliedTheme = document.querySelector('[class*="bearded-theme-arc-json"]')
+    const synthWaveTheme = document.querySelector('[class*="shaobeichen-gradient-theme-themes"]')
     return appliedTheme && synthWaveTheme
   }
 
@@ -83,9 +83,10 @@
   const initNeonDreams = (disableGlow, obs) => {
     const tokensEl = document.querySelector('.vscode-tokens-styles')
 
-    if (!tokensEl || !readyForReplacement(tokensEl, tokenReplacements)) {
-      return
-    }
+    // if (!tokensEl || !readyForReplacement(tokensEl, tokenReplacements)) {
+    //   return
+    // }
+    console.warn(333333333333)
 
     const initialThemeStyles = tokensEl.innerText
 
@@ -142,6 +143,9 @@
   // Start bootstrapping!
   //=============================
   initNeonDreams([DISABLE_GLOW])
+
+  console.warn(11111111111)
+
   // Grab body node
   const bodyNode = document.querySelector('body')
   // Use a mutation observer to check when we can bootstrap the theme

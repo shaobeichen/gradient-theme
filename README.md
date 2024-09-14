@@ -1,103 +1,69 @@
-# gradient-theme
+# Gradient Theme
 
-vscode gradient theme
+![Gradient Theme logo](./banner.png)
 
-![Synthwave '84 logo over a cityscape](./banner.png)
+# 主题
 
-Do you remember that endless summer back in '84? Cruising down the ocean-highway with the top down, the wind in our hair and heads buzzing with neon dreams?
+### Gradient Bearded Theme Arc
 
-No, I don't remember it either, but with this experimental theme we can go there.
+![Gradient Theme text](./theme.png)
 
-**As of v0.1.0, no external extensions are needed to activate the glow effect!**
+我基于 [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) 里 Arc 主题，给它添加了渐变效果。
 
-![Neon glowing text](./theme.png)
+## 安装
 
-This colour scheme is influenced by the music and the cover artwork of modern Synthwave bands like FM-84, Timecop 1983 and The Midnight. By association, that means I've also taken heavy influence from the excellent [retro-tinged artwork of James White](https://signalnoise.com/) (check out his work, it's awesome).
+- 在 [ VSCode Marketplace ](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme) 安装主题。
 
-## But...why?
+  或者
 
-I was a kid in the 80s but for most of my teenage life I strongly disliked nearly everything about the 80s aesthetic of my childhood. It was like, _so lame_. With the hindsight of recent years though, I've realised that it was actually pretty sweet and I wanted to celebrate it a little.
+- 在 VSCode 中搜索 Gradient Theme、gradient-theme 关键字后，进行安装。
 
-Much the same way, in the modern web-development world of shaders, React and WebGL, I feel like it's easy to forget that the basics are actually pretty damn good. To that end, this theme goes back to basics - No Shader magic. No cloud-streamed WebGL render-farms. Just plain CSS :)
+安装后可以选择基础主题，**此时并没有渐变效果**，如果想要开启渐变效果的话，请看下一步。
 
-## Installation
+**为什么没有直接开启渐变效果呢？**
 
-To begin with, [install the base theme from the VS Marketplace](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode). This is the way Synthwave '84 is intended to be used day-to-day. If you want to enable the gratuitous 80s glow, it needs a little extra work to get it going.
+因为开启渐变效果会对 VSCode 的核心文件进行修改，会有 VSCode 已损坏的警告提示，尽管可以移除警告提示，但还是一部分人不希望这样，在底部会有详细说明。
 
-### Disclaimer
+## 渐变效果
 
-VS code doesn't natively support text effects and as a result, the glow is experimental. It's likely to be buggy and, whilst it looks rad, it isn't intended for extended use. To enable the glow, the extension has to modify the internal files of VS Code, so use with caution. Should something go wrong, you can disable the glow by following the instructions below. If for any reason you can't open VS Code, you can fix the issue with a fresh install of VS Code.
+![enable command](./command.png)
 
-If you do decide use the glow effect, you do so at your own risk. Bring your Sunglasses. Here be (laser)dragons.
+### 开启渐变
 
-### To enable the glow
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
 
-As of v0.1.0, external extensions are no longer needed to active the glow.
+### 关闭渐变
 
-Firstly, if you are a Windows user, you may need to run VS Code with administrator privileges. For Linux and Mac users, Code must not be installed in a read-only location and you must have write permissions.
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: disable xxxx**”来实现此操作。(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
 
-If you have been using Synthwave prior to v0.1.0, you will likely have used the Custom CSS and JS extension to enable the glow. Before enabling Neon Dreams, you will need to disable the prior method. You can do this by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "**Disable Custom CSS and JS**"
+## 忽略已损坏警告提示
 
-To activate the glow, Set your active colour theme to Synthwave '84 - as of v0.1.0 the glow is only active when the base theme is selected. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "**Enable Neon Dreams**". It will prompt you to restart, and when you do the lights should be on :)
+请注意，由于开启渐变效果会对 VSCode 的核心文件进行修改，VSCode 会将其解释为核心文件“已损坏”，你可能会在重新启动编辑器时看到这样一条警告提示，你可以安全地忽略此消息。
 
-Note: In the name of simplifying the install process and mitigating update-related issues, the new version of Synthwave '84 doesn't use a custom CSS file anymore. _If you have been using a custom-modified version of the theme, then you can still continue to use that with the previous Custom CSS and JS method_.
+## 更新 VSCode
 
-#### To customise the glow brightness
+请注意，每次更新 VSCode 后，都需要重复步骤以重新开启渐变效果。
 
-In your `settings.json` add the key:
+## 更换其他主题
 
-```
-"synthwave84.brightness": 0.45
-```
+请注意，如果开启了渐变效果，此时你想更换其他主题，可以先关闭渐变效果，再选择其他主题，否则渐变主题会影响到其他主题的颜色。
 
-The value should be a _float value_ from 0 to 1, where 0.0 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time.
+## 兼容性
 
-To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "**Enable Neon Dreams**".
+这个主题仍然在不断更新优化。我主要使用 HTML、CSS、JS、TS、Vue、React 等进行开发，因此，虽然这些语言和框架看起来不错，但其他语言和框架可能会出现主题并不合适的情况。如果你发现任何明显的问题，可以提出一个问题，我会尽快解决。
 
-Note: Changing the brightness currently only affects the opacity of the glow, the text will remain white (that may change in future updates). If you want to disable the glow effect but retain the chrome updates, see below.
+## 贡献
 
-#### To enable editor chrome updates, but disable glow
+很高兴你对这个主题感到兴趣，欢迎任何合适的贡献。
 
-In your `settings.json` add the key:
+## 感谢
 
-```
-"synthwave84.disableGlow": true
-```
+感谢以下主题的作者为开源做出贡献。🙏 我在以下主题的基础上为各个主题制作了渐变效果。
 
-To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "**Enable Neon Dreams**".
+**[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)**
 
-### To remove corruption warning and [unsupported] from title-bar
+**[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
 
-Because enabling the glow modifies core files, VS code will interpret this as the core being 'corrupted' and you may see an error message on restarting your editor. You can safely dismiss this message, or remove it entirely with the [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums 'Fix VSCode Checksums') extension.
+感谢以下主题的作者为开源做出贡献。🙏 我在这个主题的开源代码基础上制作了这个单独的主题，方便大家直接使用。
 
-Upon installation of 'Fix VSCode Checksums', open the command palette and execute `Fix Checksums: Apply`. You will need to completely restart VSCode after execution, reopening without fully exiting might not be enough.
-
-## Updates
-
-Every time you update VS code, you will need to repeat this step to re-enable the glow.
-
-## Disabling the glow and uninstallation
-
-The glow effect started as a joke and was never intended for long-term coding sessions. If you want to turn it off, you can disable it at any time by opening your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "**Disable Neon Dreams**".
-
-### Font
-
-I haven't included a font in this release as I know that it's a very personal preference. The font I use (that is seen in the image above) is [Fira Code](https://github.com/tonsky/FiraCode), which I recommend if you're a fan of ligatures.
-
-## Compatibility
-
-This theme is still **very much a work in progress**. I primarily develop in HTML & CSS, JS, React and Elixir so, whilst those language sets should look pretty good, there will likely be issues for other languages. I'll work on adding more support as I go. If you find anything glaringly wrong, raise an issue and I'll try to fix it as soon as I can.
-
-## Contributing
-
-I'm really happy to consider any contributions to this theme. Before you make any changes, [please read the contribution guide](https://github.com/robb0wen/synthwave-vscode/blob/master/CONTRIBUTING.md).
-
-## Thanks
-
-Lastly, I couldn't have made this if it weren't for the fantastic work of [Sarah Drasner](https://twitter.com/sarah_edo). Her [tutorial on theming for CSS tricks](https://css-tricks.com/creating-a-vs-code-theme/) was a huge help in developing this 🙏
-
-Similarly, I'd like to thanks [Wes Bos](https://twitter.com/wesbos) for his [cool Cobalt2 theme](https://github.com/wesbos/cobalt2-vscode). His readme helped me figure out how to package this hot mess for public use 👍
-
-If this theme is too much, then I recommend [Horizon](https://github.com/jolaleye/horizon-theme-vscode), or [City Lights](http://citylights.xyz/) for a similar, yet more understated, retro vibe. They're both beautiful.
-
-Banner cityscape image from [Unsplash](https://unsplash.com/photos/DxHR8K5Egjk)
+**[SynthWave '84](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
