@@ -79,6 +79,7 @@ function activate(context) {
   this.cntx = context
 
   registerCommand(context, 'GradientBeardedThemeArc', 'gradient-bearded-theme-arc')
+  registerCommand(context, 'GradientDraculaTheme', 'gradient-dracula-theme')
 }
 
 exports.activate = activate
