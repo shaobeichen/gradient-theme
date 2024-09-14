@@ -2,7 +2,7 @@
 
 ![Gradient Theme logo](./banner.png)
 
-# 注意
+# 警告
 
 如果你对 VSCode 已损坏警告提示非常介意的话，**不推荐**使用此主题。
 
@@ -34,9 +34,9 @@
 
 ## 渐变效果
 
-![enable command](./command.png)
-
 ### 开启渐变
+
+![enable command](./command.png)
 
 你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。
 
@@ -54,17 +54,19 @@
 
 在 开启渐变效果 或 关闭渐变效果 后，会有一条提示，点击重启编辑器后，才能看到渐变效果。
 
-## 忽略已损坏警告提示
+## 请注意
+
+### 1. 忽略已损坏警告提示
 
 请注意，由于开启渐变效果会对 VSCode 的核心文件进行修改，VSCode 会将其解释为核心文件“已损坏”，你可能会在重启编辑器时看到这样一条警告提示，你可以安全地忽略此消息。
 
 如果你不想忽略警告提示的话，请自己考虑好是否要使用此主题。
 
-## 更新 VSCode
+### 2. 更新 VSCode
 
 请注意，每次更新 VSCode 后，都需要重复步骤以重新开启渐变效果。
 
-## 更换其他主题
+### 3. 更换其他主题
 
 请注意，如果开启了渐变效果，此时你想更换其他主题，可以先关闭渐变效果，再选择其他主题，否则渐变主题会影响到其他主题的颜色。
 
@@ -72,9 +74,17 @@
 
 这个主题仍然在不断更新优化。我主要使用 HTML、CSS、JS、TS、Vue、React 等进行开发，因此，虽然这些语言和框架看起来不错，但其他语言和框架可能会出现主题并不合适的情况。如果你发现任何明显的问题，可以提出一个问题，我会尽快解决。
 
-## 贡献
+## 如何贡献
 
 很高兴你对这个主题感到兴趣，欢迎任何合适的贡献。
+
+1. Fork 并 Clone 此仓库`git clone https://github.com/<YOUR-USERNAME>/gradient-theme`
+2. 为你的更改创建一个分支`git checkout-b my-new-feature`
+3. 在 VSCode 中打开*gradient-theme*文件夹
+4. 修改你想修改的文件
+5. 在 VSCode 中使用 F5 进行调试预览
+6. Commit 并 Push 你的修改
+7. 提交一份 PR ，请注意并非所有建议都能被接受
 
 ## 感谢
 
@@ -86,4 +96,4 @@
 
 感谢以下主题的作者为开源做出贡献。🙏 我在这个主题的开源代码基础上制作了这个单独的主题，方便大家直接使用。
 
-**[SynthWave '84](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
+**[SynthWave '84](https://github.com/robb0wen/synthwave-vscode)**
