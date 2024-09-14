@@ -1,8 +1,8 @@
 # Gradient Theme
 
-![Gradient Theme logo](./banner.png)
+![Gradient Theme logo](./images/banner.png)
 
-English | [中文文档](./README-zh.md)
+English | [中文文档](./images/README-zh.md)
 
 # Warning
 
@@ -30,13 +30,13 @@ So I learned how to make a VSCode theme plugin and made this gradient theme plug
 
 ### Gradient Bearded Theme Arc
 
-![Gradient Theme text](./gradient-bearded-theme-arc.png)
+![Gradient Theme text](./images/gradient-bearded-theme-arc.png)
 
 I added a gradient effect to the Arc theme in [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme).
 
 ### Gradient Dracula Theme
 
-![Gradient Theme text](./gradient-dracula-theme.png)
+![Gradient Theme text](./images/gradient-dracula-theme.png)
 
 I added a gradient effect to [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
@@ -60,7 +60,7 @@ If you don't want to ignore the warning prompt, please consider carefully whethe
 
 ### Enable Gradient
 
-![enable command](./command.png)
+![enable command](./images/command.png)
 
 You can enable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: enable xxxx**".
 
@@ -74,7 +74,7 @@ You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selec
 
 ### Restart Editor
 
-![restart](./restart.png)
+![restart](./images/restart.png)
 
 After enabling or disabling the gradient effect, there will be a prompt, click to restart the editor to see the gradient effect.
 

@@ -1,8 +1,8 @@
 # Gradient Theme
 
-![Gradient Theme logo](./banner.png)
+![Gradient Theme logo](./images/banner.png)
 
-中文文档 | [English](./README.md)
+中文文档 | [English](./images/README.md)
 
 # 警告
 
@@ -30,13 +30,13 @@
 
 ### Gradient Bearded Theme Arc
 
-![Gradient Theme text](./gradient-bearded-theme-arc.png)
+![Gradient Theme text](./images/gradient-bearded-theme-arc.png)
 
 我基于 [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) 里 Arc 主题，给它添加了渐变效果。
 
 ### Gradient Dracula Theme
 
-![Gradient Theme text](./gradient-dracula-theme.png)
+![Gradient Theme text](./images/gradient-dracula-theme.png)
 
 我基于 [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) ，给它添加了渐变效果。
 
@@ -58,7 +58,7 @@
 
 ### 开启渐变
 
-![enable command](./command.png)
+![enable command](./images/command.png)
 
 你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。
 
@@ -72,7 +72,7 @@
 
 ### 重启编辑器
 
-![restart](./restart.png)
+![restart](./images/restart.png)
 
 在 开启渐变效果 或 关闭渐变效果 后，会有一条提示，点击重启编辑器后，才能看到渐变效果。
 
