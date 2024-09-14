@@ -1,10 +1,10 @@
 {
-    "name": "synthwave-vscode",
-    "displayName": "SynthWave '84",
-    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
-    "version": "0.1.15",
-    "author": "Robb Owen",
-    "publisher": "RobbOwen",
+    "name": "gradient-theme",
+    "displayName": "Gradient Theme",
+    "description": "A Gradient Theme",
+    "version": "0.1.5",
+    "author": "shaobeichen",
+    "publisher": "shaobeichen",
     "icon": "icon.png",
     "repository": {
         "type": "git",
@@ -14,8 +14,9 @@
         "vscode": "^1.33.0"
     },
     "keywords": [
-        "retro",
-        "80s"
+        "gradient",
+        "theme",
+        "渐变"
     ],
     "categories": [
         "Themes"
@@ -28,9 +29,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "SynthWave '84",
+                "label": "Gradient Bearded Theme Arc",
                 "uiTheme": "vs-dark",
-                "path": "./themes/synthwave-color-theme.json"
+                "path": "./themes/bearded-theme-arc.json"
+            },
+            {
+                "label": "Gradient Dracula Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dracula-theme.json"
             }
         ],
         "commands": [
