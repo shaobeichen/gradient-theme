@@ -2,7 +2,7 @@
 
 ![Gradient Theme logo](./banner.png)
 
-English | [中文文档](./README_zh.md)
+English | [中文文档](./README-zh.md)
 
 # Warning
 
