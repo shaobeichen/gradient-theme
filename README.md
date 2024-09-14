@@ -2,6 +2,12 @@
 
 ![Gradient Theme logo](./banner.png)
 
+# 注意
+
+如果你对 VSCode 的已损坏警告提示非常介意的话，**不推荐**使用此主题。
+
+老实说，我一开始也是比较介意，后来我忽略了警告提示后，再也不介意了。
+
 # 主题
 
 ### Gradient Bearded Theme Arc
@@ -30,11 +36,15 @@
 
 ### 开启渐变
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。
+
+(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
 
 ### 关闭渐变
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: disable xxxx**”来实现此操作。(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: disable xxxx**”来实现此操作。
+
+(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
 
 ## 忽略已损坏警告提示
 
