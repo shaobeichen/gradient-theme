@@ -2,9 +2,9 @@
 
 ![Gradient Theme logo](./banner.png)
 
-English | [中文文档](./README-zh.md)
+中文文档 | [English](./README.md)
 
-# Warning
+# 警告
 
 如果你对 VSCode 已损坏警告提示非常介意的话，**不推荐**使用此主题。
 
