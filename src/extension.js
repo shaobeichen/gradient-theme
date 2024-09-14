@@ -1,20 +1,73 @@
 const path = require('path')
 const fs = require('fs')
 const vscode = require('vscode')
-const diff = require('semver/functions/diff')
+// const diff = require('semver/functions/diff')
+
+// Returns true if the VS Code version running this extension is below the
+// version specified in the "version" parameter. Otherwise returns false.
+function isVSCodeBelowVersion(version) {
+  const vscodeVersion = vscode.version
+  const vscodeVersionArray = vscodeVersion.split('.')
+  const versionArray = version.split('.')
+
+  for (let i = 0; i < versionArray.length; i++) {
+    if (vscodeVersionArray[i] < versionArray[i]) {
+      return true
+    }
+  }
+
+  return false
+}
+
+function uninstall() {
+  var isWin = /^win/.test(process.platform)
+  var appDir = path.dirname(require.main.filename)
+  var base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
+  var electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
+
+  var htmlFile =
+    base +
+    (isWin
+      ? '\\' + electronBase + '\\workbench\\workbench.html'
+      : '/' + electronBase + '/workbench/workbench.html')
+
+  // modify workbench html
+  const html = fs.readFileSync(htmlFile, 'utf-8')
+
+  // check if the tag is already there
+  const isEnabled = html.includes('neondreams.js')
+
+  if (isEnabled) {
+    // delete synthwave script tag if there
+    let output = html.replace(
+      /^.*(<!-- gradient-theme --><script src="neondreams.js"><\/script><!-- gradient-theme -->).*\n?/gm,
+      '',
+    )
+    fs.writeFileSync(htmlFile, output, 'utf-8')
+
+    vscode.window
+      .showInformationMessage(
+        'Neon Dreams disabled. VS code must reload for this change to take effect',
+        { title: 'Restart editor to complete' },
+      )
+      .then(function (msg) {
+        vscode.commands.executeCommand('workbench.action.reloadWindow')
+      })
+  } else {
+    vscode.window.showInformationMessage("Neon dreams isn't running.")
+  }
+}
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-  vscode.window.showInformationMessage('1')
   this.extensionName = 'shaobeichen.gradient-theme'
   this.cntx = context
 
   const config = vscode.workspace.getConfiguration('gradient_theme')
 
   let disableGlow = config && config.disableGlow ? !!config.disableGlow : false
-  vscode.window.showInformationMessage('2')
 
   let brightness = parseFloat(config.brightness) > 1 ? 1 : parseFloat(config.brightness)
   brightness = brightness < 0 ? 0 : brightness
@@ -24,8 +77,6 @@ function activate(context) {
     .toString(16)
     .toUpperCase()
   let neonBrightness = parsedBrightness
-
-  vscode.window.showInformationMessage('3')
 
   let disposable = vscode.commands.registerCommand('gradient_theme.enableNeon', function () {
     vscode.window.showInformationMessage('6')
@@ -112,8 +163,6 @@ function activate(context) {
 
   let disable = vscode.commands.registerCommand('gradient_theme.disableNeon', uninstall)
 
-  vscode.window.showInformationMessage('4')
-
   context.subscriptions.push(disposable)
   context.subscriptions.push(disable)
 
@@ -124,61 +173,6 @@ exports.activate = activate
 // this method is called when your extension is deactivated
 function deactivate() {
   // ...
-}
-
-function uninstall() {
-  var isWin = /^win/.test(process.platform)
-  var appDir = path.dirname(require.main.filename)
-  var base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
-  var electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
-
-  var htmlFile =
-    base +
-    (isWin
-      ? '\\' + electronBase + '\\workbench\\workbench.html'
-      : '/' + electronBase + '/workbench/workbench.html')
-
-  // modify workbench html
-  const html = fs.readFileSync(htmlFile, 'utf-8')
-
-  // check if the tag is already there
-  const isEnabled = html.includes('neondreams.js')
-
-  if (isEnabled) {
-    // delete synthwave script tag if there
-    let output = html.replace(
-      /^.*(<!-- gradient-theme --><script src="neondreams.js"><\/script><!-- gradient-theme -->).*\n?/gm,
-      '',
-    )
-    fs.writeFileSync(htmlFile, output, 'utf-8')
-
-    vscode.window
-      .showInformationMessage(
-        'Neon Dreams disabled. VS code must reload for this change to take effect',
-        { title: 'Restart editor to complete' },
-      )
-      .then(function (msg) {
-        vscode.commands.executeCommand('workbench.action.reloadWindow')
-      })
-  } else {
-    vscode.window.showInformationMessage("Neon dreams isn't running.")
-  }
-}
-
-// Returns true if the VS Code version running this extension is below the
-// version specified in the "version" parameter. Otherwise returns false.
-function isVSCodeBelowVersion(version) {
-  const vscodeVersion = vscode.version
-  const vscodeVersionArray = vscodeVersion.split('.')
-  const versionArray = version.split('.')
-
-  for (let i = 0; i < versionArray.length; i++) {
-    if (vscodeVersionArray[i] < versionArray[i]) {
-      return true
-    }
-  }
-
-  return false
 }
 
 module.exports = {
