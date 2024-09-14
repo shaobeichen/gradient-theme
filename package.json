@@ -2,13 +2,13 @@
     "name": "gradient-theme",
     "displayName": "Gradient Theme",
     "description": "A Gradient Theme",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "author": "shaobeichen",
     "publisher": "shaobeichen",
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robb0wen/synthwave-vscode"
+        "url": "https://github.com/shaobeichen/gradient-theme"
     },
     "engines": {
         "vscode": "^1.33.0"
@@ -22,10 +22,10 @@
         "Themes"
     ],
     "activationEvents": [
-        "onCommand:synthwave84.enableNeon",
-        "onCommand:synthwave84.disableNeon"
+        "onCommand:gradient_theme.enableNeon",
+        "onCommand:gradient_theme.disableNeon"
     ],
-    "main": "./src/extension.js",
+    "main": "./src/extension",
     "contributes": {
         "themes": [
             {
@@ -41,26 +41,26 @@
         ],
         "commands": [
             {
-                "command": "synthwave84.enableNeon",
-                "title": "Synthwave '84: Enable Neon Dreams"
+                "command": "gradient_theme.enableNeon",
+                "title": "Gradient Theme: Enable Neon Dreams"
             },
             {
-                "command": "synthwave84.disableNeon",
-                "title": "Synthwave '84: Disable Neon Dreams"
+                "command": "gradient_theme.disableNeon",
+                "title": "Gradient Theme: Disable Neon Dreams"
             }
         ],
         "configuration": {
-            "title": "Synthwave '84",
+            "title": "Gradient Theme",
             "properties": {
-                "synthwave84.brightness": {
+                "gradient_theme.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "synthwave84.disableGlow": {
+                "gradient_theme.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                    "description": "Disable the glow effect, but show gradient-theme editor chrome updates"
                 }
             }
         }
