@@ -5,7 +5,7 @@
     "version": "1.2.0",
     "author": "shaobeichen",
     "publisher": "shaobeichen",
-    "icon": "icon.png",
+    "icon": "./images/icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/shaobeichen/gradient-theme"
