@@ -62,15 +62,11 @@ If you don't want to ignore the warning prompt, please consider carefully whethe
 
 ![enable command](./images/command.png)
 
-You can enable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: enable xxxx**".
-
-(Here xxxx represents the base theme you have chosen, whatever base theme you have chosen, use the corresponding command)
+You can enable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "\*\*Gradient Theme: Enable Gradient".
 
 ### Disable Gradient
 
-You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: disable xxxx**".
-
-(Here xxxx represents the base theme you have chosen, whatever base theme you have chosen, use the corresponding command)
+You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "\*\*Gradient Theme: Disable Gradient".
 
 ### Restart Editor
 
@@ -122,6 +118,6 @@ Thanks to the authors of the following themes for their contributions to open so
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
 
-Thanks to the authors of the following themes for their contributions to open source. 🙏 I made this standalone theme based on the open source code of this theme, which is convenient for everyone to use directly.
+Thanks to the authors of the following themes for their contributions to open source. 🙏 My coding ideas come from the following themes.
 
 **[SynthWave '84](https://github.com/robb0wen/synthwave-vscode)**

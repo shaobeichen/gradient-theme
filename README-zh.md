@@ -60,15 +60,11 @@
 
 ![enable command](./images/command.png)
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: enable xxxx**”来实现此操作。
-
-(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“\*\*Gradient Theme: Enable Gradient”来实现此操作。
 
 ### 关闭渐变
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: disable xxxx**”来实现此操作。
-
-(这里的 xxxx 代表的是你当前选择的基础主题，你当前选了什么基础主题，就使用相应的命令)
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“\*\*Gradient Theme: Disable Gradient”来实现此操作。
 
 ### 重启编辑器
 
@@ -120,6 +116,6 @@
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
 
-感谢以下主题的作者为开源做出贡献。🙏 我在这个主题的开源代码基础上制作了这个单独的主题，方便大家直接使用。
+感谢以下主题的作者为开源做出贡献。🙏 我代码的思路来源于以下主题。
 
 **[SynthWave '84](https://github.com/robb0wen/synthwave-vscode)**

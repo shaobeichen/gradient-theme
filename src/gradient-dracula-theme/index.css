@@ -1,11 +1,5 @@
 /* git 待提交数量徽章样式 */
-.monaco-workbench
-  .activitybar
-  > .content
-  :not(.monaco-menu)
-  > .monaco-action-bar
-  .badge
-  .badge-content {
+.activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
   background-image: linear-gradient(45deg, #ff61d2, #ffa5a4);
   border-width: 0 !important;
   color: rgb(70 70 70) !important;
@@ -20,11 +14,11 @@
     background-position: 100%;
   }
 }
-.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.tab-border-top.active {
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active {
   --tab-border-top-color: transparent !important;
   position: relative;
 }
-.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.tab-border-top.active:after {
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active:after {
   content: '';
   position: absolute;
   top: 0;

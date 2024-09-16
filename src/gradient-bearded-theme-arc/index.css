@@ -1,11 +1,5 @@
 /* git 待提交数量徽章样式 */
-.monaco-workbench
-  .activitybar
-  > .content
-  :not(.monaco-menu)
-  > .monaco-action-bar
-  .badge
-  .badge-content {
+.activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
   background-image: linear-gradient(45deg, #eacd61, #ea618e);
   border-width: 0 !important;
   color: rgb(70 70 70) !important;
