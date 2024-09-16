@@ -97,7 +97,9 @@ function activate(context) {
 
 exports.activate = activate
 
-function deactivate() {}
+function deactivate() {
+  reset()
+}
 
 module.exports = {
   activate,
