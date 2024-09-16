@@ -37,27 +37,17 @@
         ],
         "commands": [
             {
-                "command": "extension.enableGradientBeardedThemeArc",
-                "title": "Gradient Theme: enable GradientBeardedThemeArc"
+                "command": "extension.enable",
+                "title": "Gradient Theme: Enable Gradient"
             },
             {
-                "command": "extension.disableGradientBeardedThemeArc",
-                "title": "Gradient Theme: disable GradientBeardedThemeArc"
-            },
-            {
-                "command": "extension.enableGradientDraculaTheme",
-                "title": "Gradient Theme: enable GradientDraculaTheme"
-            },
-            {
-                "command": "extension.disableGradientDraculaTheme",
-                "title": "Gradient Theme: disable GradientDraculaTheme"
+                "command": "extension.disable",
+                "title": "Gradient Theme: Disable Gradient"
             }
         ]
     },
     "activationEvents": [
-        "onCommand:extension.enableGradientBeardedThemeArc",
-        "onCommand:extension.disableGradientBeardedThemeArc",
-        "onCommand:extension.enableGradientDraculaTheme",
-        "onCommand:extension.disableGradientDraculaTheme"
+        "onCommand:extension.enable",
+        "onCommand:extension.disable"
     ]
 }

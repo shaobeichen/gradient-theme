@@ -2,17 +2,11 @@ const path = require('path')
 const fs = require('fs')
 const vscode = require('vscode')
 
-const isWin = /^win/.test(process.platform)
-const appDir = path.dirname(require.main.filename)
-const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
-const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
-const htmlFile =
-  base +
-  (isWin
-    ? '\\' + electronBase + '\\workbench\\workbench.html'
-    : '/' + electronBase + '/workbench/workbench.html')
-
-const enableCommonMessage = `VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
+const config = {
+  themes: ['gradient-bearded-theme-arc', 'gradient-dracula-theme'],
+  extensionName: 'shaobeichen.gradient-theme',
+  //   'shaobeichen-gradient-theme-themes-gradient-dracula-theme-json'
+}
 
 function isVSCodeBelowVersion(version) {
   const vscodeVersion = vscode.version
@@ -36,23 +30,35 @@ function showReloadMessage(message) {
     })
 }
 
-function registerCommand(context, name, filename) {
-  const prefix = 'extension'
-  const enablePrefix = 'enable'
-  const disablePrefix = 'disable'
-  const enableCommand = prefix + '.' + enablePrefix + name
-  const disableCommand = prefix + '.' + disablePrefix + name
+function registerCommand(context, themes) {
+  const isWin = /^win/.test(process.platform)
+  const appDir = path.dirname(require.main.filename)
+  const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
+  const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
+  const htmlFile =
+    base +
+    (isWin
+      ? '\\' + electronBase + '\\workbench\\workbench.html'
+      : '/' + electronBase + '/workbench/workbench.html')
 
-  const enableMessage = name + ' ' + enablePrefix + 'd. ' + enableCommonMessage
-  const disableMessage = name + ' ' + disablePrefix + 'd. ' + enableCommonMessage
+  const enableCommonMessage = `VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
+
+  const prefix = 'extension'
+  const enableName = 'enable'
+  const disableName = 'disable'
+  const enableCommand = prefix + '.' + enableName
+  const disableCommand = prefix + '.' + disableName
+
+  const enableMessage = 'Gradient ' + enableName + 'd. ' + enableCommonMessage
+  const disableMessage = 'Gradient ' + disableName + 'd. ' + enableCommonMessage
 
   const tagAttr = 'data-gradient-theme-id'
 
   const disposable = vscode.commands.registerCommand(enableCommand, function () {
     const html = fs.readFileSync(htmlFile, 'utf-8')
+    // 1.2 TODO
     const css = fs.readFileSync(__dirname + '/' + filename + '/index.css', 'utf-8')
-    const js = fs.readFileSync(__dirname + '/' + filename + '/index.js', 'utf-8')
-    const output = html + `<style ${tagAttr}>${css}</style>` + `<script ${tagAttr}>${js}</script>`
+    const output = html + `<style ${tagAttr}>${css}</style>`
     fs.writeFileSync(htmlFile, output, 'utf-8')
 
     showReloadMessage(enableMessage)
@@ -75,11 +81,10 @@ function registerCommand(context, name, filename) {
 }
 
 function activate(context) {
-  this.extensionName = 'shaobeichen.gradient-theme'
+  this.extensionName = config.extensionName
   this.cntx = context
 
-  registerCommand(context, 'GradientBeardedThemeArc', 'gradient-bearded-theme-arc')
-  registerCommand(context, 'GradientDraculaTheme', 'gradient-dracula-theme')
+  registerCommand(context, config.themes)
 }
 
 exports.activate = activate
