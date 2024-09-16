@@ -6,11 +6,11 @@ English | [中文文档](./README-zh.md)
 
 # Warning
 
-If you are very concerned about the VSCode "damaged" warning prompt, **it is not recommended** to use this theme.
+If you are very concerned about the VSCode "corrupted" warning prompt, **it is not recommended** to use this theme.
 
-If you do not want to ignore the "damaged" warning prompt, please consider carefully whether to use this theme.
+If you do not want to ignore the "corrupted" warning prompt, please consider carefully whether to use this theme.
 
-To be honest, I was very mind at first, but after I ignored the "damaged" warning prompt, I no longer cared.
+To be honest, I was very mind at first, but after I ignored the "corrupted" warning prompt, I no longer cared.
 
 # Inspiration
 
@@ -52,7 +52,7 @@ After installation, you can choose the base theme, **there is no gradient effect
 
 **Why isn't the gradient effect enabled directly?**
 
-Because enabling the gradient effect will modify the core files of VSCode, which will be interpreted as "damaged" by VSCode, and you may see a warning prompt when restarting the editor, but you can safely ignore this message.
+Because enabling the gradient effect will modify the core files of VSCode, which will be interpreted as "corrupted" by VSCode, and you may see a warning prompt when restarting the editor, but you can safely ignore this message.
 
 If you don't want to ignore the warning prompt, please consider carefully whether to use this theme.
 
@@ -76,9 +76,9 @@ After enabling or disabling the gradient effect, there will be a prompt, click t
 
 # Please Note
 
-### 1. Ignore the "Damaged" Warning Prompt
+### 1. Ignore the "Corrupted" Warning Prompt
 
-Please note that since enabling the gradient effect modifies the core files of VSCode, VSCode will interpret it as a "damaged" core file, and you may see a warning prompt when restarting the editor, which you can safely ignore.
+Please note that since enabling the gradient effect modifies the core files of VSCode, VSCode will interpret it as a "corrupted" core file, and you may see a warning prompt when restarting the editor, which you can safely ignore.
 
 If you do not want to ignore the warning prompt, please consider carefully whether to use this theme.
 
