@@ -1,7 +1,6 @@
 const path = require('path')
 const fs = require('fs')
 const vscode = require('vscode')
-const sass = require('sass')
 
 const config = {
   themes: ['gradient-bearded-theme-arc', 'gradient-dracula-theme'],
@@ -59,6 +58,8 @@ function reset() {
 
 function install() {
   reset()
+
+  const sass = require('sass')
 
   const html = fs.readFileSync(htmlFile, 'utf-8')
 
