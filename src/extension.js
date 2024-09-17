@@ -62,11 +62,10 @@ function reset() {
 
 function install() {
   const distIndexHtmlFile = path.join(__dirname, '../dist/index.html')
-
   const html = getResetContent()
   const styleHtml = fs.readFileSync(distIndexHtmlFile, 'utf-8')
-
-  fs.writeFileSync(htmlFile, html + styleHtml, 'utf-8')
+  const output = html.replace('</html>', '') + styleHtml + '</html>'
+  fs.writeFileSync(htmlFile, output, 'utf-8')
 
   showReloadMessage(enableMessage)
 }

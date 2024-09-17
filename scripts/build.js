@@ -22,7 +22,15 @@ const output = config.themes.reduce((prev, cur) => {
   const cssText = fs.readFileSync(cssFileUrl, 'utf-8')
   const scssText = `.${config.classTemplate.replace('${themeName}', cur)}{${cssText}}`
   const scssCompile = sass.compileString(scssText, { sourceMap: false, style: 'expanded' })
-  return prev + `<style ${config.tagAttr}>${scssCompile.css.toString()}</style>`
+  const cssWithoutCharset = scssCompile.css.toString().replace(/^@charset "UTF-8";\s*/g, '')
+  return (
+    prev +
+    `
+<style ${config.tagAttr}>
+${cssWithoutCharset}
+</style>
+`
+  )
 }, '')
 
 fs.writeFileSync(indexFilePath, output, 'utf-8')
