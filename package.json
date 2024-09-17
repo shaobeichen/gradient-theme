@@ -2,7 +2,7 @@
     "name": "gradient-theme",
     "displayName": "Gradient Theme",
     "description": "Multiple beautiful gradient themes",
-    "version": "1.3.0",
+    "version": "1.3.2",
     "author": "shaobeichen",
     "publisher": "shaobeichen",
     "icon": "./icon.png",
@@ -21,7 +21,7 @@
     "categories": [
         "Themes"
     ],
-    "main": "./src/extension",
+    "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
