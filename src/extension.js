@@ -3,9 +3,8 @@ const fs = require('fs')
 const vscode = require('vscode')
 
 const config = {
-  themes: ['gradient-bearded-theme-arc', 'gradient-dracula-theme'],
   extensionName: 'shaobeichen.gradient-theme',
-  classTemplate: 'shaobeichen-gradient-theme-themes-${themeName}-json',
+  tagAttr: 'data-gradient-theme-id',
 }
 
 function isVSCodeBelowVersion(version) {
@@ -44,7 +43,7 @@ const disableCommand = prefix + '.' + disableName
 const enableMessage = 'Gradient ' + enableName + 'd. ' + enableCommonMessage
 const disableMessage = 'Gradient ' + disableName + 'd. ' + enableCommonMessage
 
-const tagAttr = 'data-gradient-theme-id'
+const tagAttr = config.tagAttr
 
 function reset() {
   const html = fs.readFileSync(htmlFile, 'utf-8')
@@ -59,19 +58,12 @@ function reset() {
 function install() {
   reset()
 
-  const sass = require('sass')
+  const distIndexHtmlFile = path.join(__dirname, '../dist/index.html')
 
   const html = fs.readFileSync(htmlFile, 'utf-8')
+  const styleHtml = fs.readFileSync(distIndexHtmlFile, 'utf-8')
 
-  const output = config.themes.reduce((prev, cur) => {
-    const cssFileUrl = __dirname + '/' + cur + '/index.css'
-    const cssText = fs.readFileSync(cssFileUrl, 'utf-8')
-    const scssText = `.${config.classTemplate.replace('${themeName}', cur)}{${cssText}}`
-    const scssCompile = sass.compileString(scssText, { sourceMap: false, style: 'expanded' })
-    return prev + `<style ${tagAttr}>${scssCompile.css.toString()}</style>`
-  }, html)
-
-  fs.writeFileSync(htmlFile, output, 'utf-8')
+  fs.writeFileSync(htmlFile, html + styleHtml, 'utf-8')
 
   showReloadMessage(enableMessage)
 }
@@ -93,7 +85,7 @@ function activate(context) {
   this.extensionName = config.extensionName
   this.cntx = context
 
-  registerCommand(context, config.themes)
+  registerCommand(context)
 }
 
 exports.activate = activate
