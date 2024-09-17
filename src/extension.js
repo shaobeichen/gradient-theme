@@ -45,22 +45,25 @@ const disableMessage = 'Gradient ' + disableName + 'd. ' + enableCommonMessage
 
 const tagAttr = config.tagAttr
 
-function reset() {
+function getResetContent() {
   const html = fs.readFileSync(htmlFile, 'utf-8')
   const regex = new RegExp(
     `<style[^>]*${tagAttr}[^>]*>.*?</style>|<script[^>]*${tagAttr}[^>]*>.*?</script>`,
     'gs',
   )
   const output = html.replace(regex, '')
+  return output
+}
+
+function reset() {
+  const output = getResetContent()
   fs.writeFileSync(htmlFile, output, 'utf-8')
 }
 
 function install() {
-  reset()
-
   const distIndexHtmlFile = path.join(__dirname, '../dist/index.html')
 
-  const html = fs.readFileSync(htmlFile, 'utf-8')
+  const html = getResetContent()
   const styleHtml = fs.readFileSync(distIndexHtmlFile, 'utf-8')
 
   fs.writeFileSync(htmlFile, html + styleHtml, 'utf-8')
