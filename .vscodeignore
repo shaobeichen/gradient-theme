@@ -5,3 +5,4 @@ node_modules
 archive/**
 images/**
 scripts/**
+src/archive/**
