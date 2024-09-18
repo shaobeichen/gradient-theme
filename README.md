@@ -117,7 +117,3 @@ Thanks to the authors of the following themes for their contributions to open so
 **[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)**
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
-
-Thanks to the authors of the following themes for their contributions to open source. 🙏 My coding ideas come from the following themes.
-
-**[SynthWave '84](https://github.com/robb0wen/synthwave-vscode)**

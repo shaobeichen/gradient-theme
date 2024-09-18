@@ -115,7 +115,3 @@
 **[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)**
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
-
-感谢以下主题的作者为开源做出贡献。🙏 我代码的思路来源于以下主题。
-
-**[SynthWave '84](https://github.com/robb0wen/synthwave-vscode)**
