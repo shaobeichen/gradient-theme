@@ -88,11 +88,15 @@ Please note that since enabling the gradient effect modifies the core files of V
 
 If you do not want to ignore the warning prompt, please consider carefully whether to use this theme.
 
-### 2. Update VSCode
+### 2. Execute Enable command, prompt no permission
+
+If you are a Windows user, you may need to run VS Code with administrator privileges. For Linux and Mac users, Code must not be installed in a read-only location and you must have write permissions.
+
+### 3. Update VSCode
 
 Please note that after each update of VSCode, you need to repeat the steps to re-enable the gradient effect.
 
-### 3. Switch to Other Themes
+### 4. Switch to Other Themes
 
 Please note that if you have enabled the gradient effect and want to switch to another theme, you can first disable the gradient effect and then choose another theme, otherwise the gradient theme will affect the colors of other themes.
 
