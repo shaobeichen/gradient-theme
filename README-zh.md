@@ -8,6 +8,8 @@
 
 中文文档 | [English](./README.md)
 
+[当前仓库链接](https://github.com/shaobeichen/gradient-theme)，喜欢的话点一个 Star 吧！
+
 # 警告
 
 如果你对 VSCode 已损坏警告提示非常介意的话，**不推荐**使用此主题。

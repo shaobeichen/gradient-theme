@@ -8,6 +8,8 @@
 
 English | [中文文档](./README-zh.md)
 
+[Current repository link](https://github.com/shaobeichen/gradient-theme). If you like it, please give it a star!
+
 # Warning
 
 If you are very concerned about the VSCode "corrupted" warning prompt, **it is not recommended** to use this theme.
