@@ -31,7 +31,7 @@ jobs:
       # 执行 semantic-release 发布包 修改版本
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: npx semantic-release
 
       # 发布到 VSCode
