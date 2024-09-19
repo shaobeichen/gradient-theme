@@ -2,6 +2,10 @@
 
 ![Gradient Theme logo](./images/banner.png)
 
+[![](https://badgen.net/vs-marketplace/v/shaobeichen.gradient-theme)](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme)
+[![](https://badgen.net/vs-marketplace/i/shaobeichen.gradient-theme)](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme)
+[![](https://badgen.net/vs-marketplace/d/shaobeichen.gradient-theme)](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme)
+
 中文文档 | [English](./README.md)
 
 # 警告
