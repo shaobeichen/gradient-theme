@@ -8,7 +8,7 @@ const config = {
 }
 
 function isVSCodeBelowVersion(version) {
-  const vscodeVersion = vscode.version
+  const vscodeVersion = vscode.version.split('-')[0]
   const vscodeVersionArray = vscodeVersion.split('.')
   const versionArray = version.split('.')
   return versionArray.some((item, index) => vscodeVersionArray[index] < item)
@@ -23,14 +23,15 @@ function showReloadMessage(message) {
 }
 
 const isWin = /^win/.test(process.platform)
-const appDir = path.dirname(require.main.filename)
+const appDir = `${path.dirname(vscode.env.appRoot)}/app/out`
 const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
 const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
+const htmlFileName = isVSCodeBelowVersion('1.94.0') ? 'workbench.html' : 'workbench.esm.html'
 const htmlFile =
   base +
   (isWin
-    ? '\\' + electronBase + '\\workbench\\workbench.html'
-    : '/' + electronBase + '/workbench/workbench.html')
+    ? '\\' + electronBase + '\\workbench\\' + htmlFileName
+    : '/' + electronBase + '/workbench/' + htmlFileName)
 
 const enableCommonMessage = `VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
 
