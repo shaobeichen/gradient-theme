@@ -21,7 +21,7 @@ jobs:
       - name: Set node version
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '20'
 
       # 安装依赖，包括我们的 semantic-release 全套
       - name: Install
