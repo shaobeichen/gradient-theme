@@ -25,5 +25,5 @@ exe('node scripts/build.js', () => {
     console.error('dist html file is empty!')
     return
   }
-  exe('vsce publish --no-dependencies')
+  exe('npm run publish')
 })
