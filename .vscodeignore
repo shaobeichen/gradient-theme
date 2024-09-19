@@ -1,8 +1,10 @@
 .vscode/**
 .vscode-test/**
+.github/**
 vsc-extension-quickstart.md
 node_modules
 archive/**
 images/**
 scripts/**
 src/archive/**
+.releaserc.js
