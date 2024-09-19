@@ -62,6 +62,7 @@
     },
     "scripts": {
         "dev": "node scripts/build.js",
-        "release": "node scripts/release.js"
+        "release": "node scripts/release.js",
+        "publish": "vsce publish --no-dependencies"
     }
 }
