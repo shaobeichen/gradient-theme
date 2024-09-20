@@ -1,0 +1,38 @@
+# 工作流名称
+name: Build and Deploy
+
+on:
+  # 指明要运行的分支，跟上面配置保持一致
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 把分支拉出来
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      # 指定node版本
+      - name: Set node version
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      # 安装依赖，包括我们的 semantic-release 全套
+      - name: Install
+        run: npm install
+
+      # 发布到 VSCode
+      - name: Publish
+        run: npm run release
+
+      # 执行 semantic-release 发布包 修改版本
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: npx semantic-release

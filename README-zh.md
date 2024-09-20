@@ -12,7 +12,9 @@
 
 # 警告
 
-如果你对 VSCode 已损坏警告提示非常介意的话，**不推荐**使用此主题。
+![corrupt](./images/corrupt.png)
+
+尽管警告不会影响任何功能，如果你对 VSCode 已损坏警告提示非常介意的话，**不推荐**使用此主题。
 
 如果你不想忽略 VSCode 已损坏警告提示的话，请自己考虑好是否要使用此主题。
 
@@ -66,11 +68,11 @@
 
 ![enable command](./images/command.png)
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“\*\*Gradient Theme: Enable Gradient”来实现此操作。
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: Enable Gradient**”来实现此操作。
 
 ### 关闭渐变
 
-你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“\*\*Gradient Theme: Disable Gradient”来实现此操作。
+你可以通过按 `Ctrl + Shift + P` 或者 `Shift + ⌘ + P` 并选择“**Gradient Theme: Disable Gradient**”来实现此操作。
 
 ### 重启编辑器
 
@@ -82,11 +84,15 @@
 
 ### 1. 忽略已损坏警告提示
 
+![corrupt](./images/corrupt.png)
+
 请注意，由于开启渐变效果会对 VSCode 的核心文件进行修改，VSCode 会将其解释为核心文件“已损坏”，你可能会在重启编辑器时看到这样一条警告提示，你可以安全地忽略此消息。
 
 如果你不想忽略警告提示的话，请自己考虑好是否要使用此主题。
 
 ### 2. 执行 Enable 命令，提示没有权限
+
+![permission](./images/permission.png)
 
 如果您是 Windows 用户，您可能需要以管理员权限运行 VS Code。对于 Linux 和 Mac 用户，不得将 Code 安装在只读位置，并且您必须具有写入权限。
 

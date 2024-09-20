@@ -32,7 +32,7 @@
 }
 
 /* html标签属性 */
-.mtk10 {
+:not(.cursor).mtk10 {
   color: yellow;
   background-image: linear-gradient(45deg, #ff61d2, #fe908f);
   -webkit-text-fill-color: transparent;
@@ -40,7 +40,7 @@
   font-weight: 700;
 }
 
-.mtk5 {
+:not(.cursor).mtk5 {
   color: #50fa7b;
   background-image: linear-gradient(45deg, #11998f, #38ef7d);
   -webkit-text-fill-color: transparent;
@@ -48,6 +48,6 @@
   font-weight: 700;
 }
 
-.mkt8 {
+:not(.cursor).mkt8 {
   color: #ffc267;
 }

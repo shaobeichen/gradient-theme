@@ -2,7 +2,7 @@
     "name": "gradient-theme",
     "displayName": "Gradient Theme",
     "description": "Multiple beautiful gradient themes",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "author": "shaobeichen",
     "publisher": "shaobeichen",
     "icon": "./icon.png",
@@ -51,11 +51,18 @@
         "onCommand:extension.disable"
     ],
     "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/commit-analyzer": "^13.0.0",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^10.3.4",
+        "@semantic-release/release-notes-generator": "^14.0.1",
         "@vscode/vsce": "^3.1.0",
-        "sass": "^1.78.0"
+        "sass": "^1.78.0",
+        "semantic-release": "^24.1.1"
     },
     "scripts": {
         "dev": "node scripts/build.js",
-        "release": "node scripts/release.js"
+        "release": "node scripts/release.js",
+        "publish": "vsce publish --no-dependencies"
     }
 }
