@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/shaobeichen/gradient-theme/compare/v1.8.2...v1.8.3) (2024-09-20)
+
+
+### Bug Fixes
+
+* test ci (please ignore) ([bf9c802](https://github.com/shaobeichen/gradient-theme/commit/bf9c802897bbd552bcaa4c30f41273e1a0552d5d))
+
 ## [1.8.2](https://github.com/shaobeichen/gradient-theme/compare/v1.8.1...v1.8.2) (2024-09-20)
 
 
