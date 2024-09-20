@@ -90,6 +90,8 @@ If you do not want to ignore the warning prompt, please consider carefully wheth
 
 ### 2. Execute Enable command, prompt no permission
 
+![permission](./images/permission.png)
+
 If you are a Windows user, you may need to run VS Code with administrator privileges. For Linux and Mac users, Code must not be installed in a read-only location and you must have write permissions.
 
 ### 3. Update VSCode

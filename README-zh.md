@@ -88,6 +88,8 @@
 
 ### 2. 执行 Enable 命令，提示没有权限
 
+![permission](./images/permission.png)
+
 如果您是 Windows 用户，您可能需要以管理员权限运行 VS Code。对于 Linux 和 Mac 用户，不得将 Code 安装在只读位置，并且您必须具有写入权限。
 
 ### 3. 更新 VSCode
