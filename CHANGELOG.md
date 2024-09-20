@@ -3,6 +3,15 @@
 
 ### Bug Fixes
 
+* test ci (please ignore) ([2bd68d9](https://github.com/shaobeichen/gradient-theme/commit/2bd68d9260e508d4d054b4bc5884d6fa56ad52eb))
+* test ci (please ignore) ([d6c3f1e](https://github.com/shaobeichen/gradient-theme/commit/d6c3f1e074800c7b501ec90eb4e5e3f0c01eab34))
+* test ci (please ignore) ([599b144](https://github.com/shaobeichen/gradient-theme/commit/599b14425ec4297b68e70c6b0ed4a166d69e4839))
+
+## [1.8.6](https://github.com/shaobeichen/gradient-theme/compare/v1.8.5...v1.8.6) (2024-09-20)
+
+
+### Bug Fixes
+
 * test ci (please ignore) ([d6c3f1e](https://github.com/shaobeichen/gradient-theme/commit/d6c3f1e074800c7b501ec90eb4e5e3f0c01eab34))
 * test ci (please ignore) ([599b144](https://github.com/shaobeichen/gradient-theme/commit/599b14425ec4297b68e70c6b0ed4a166d69e4839))
 
