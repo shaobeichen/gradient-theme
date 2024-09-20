@@ -3,6 +3,7 @@ const path = require('path')
 const { execSync } = require('child_process')
 
 const version = process.argv[2]
+const token = process.argv[3]
 const packageJsonPath = path.join(__dirname, '../package.json')
 
 // 读取 package.json
@@ -19,6 +20,7 @@ if (fs.existsSync(packageJsonPath)) {
   // 提交更改到 Git
   execSync('git add package.json')
   execSync(`git commit -m "Update version to ${version}"`)
+  execSync(`git remote set-url origin https://${token}@github.com/shaobeichen/gradient-theme.git`)
   execSync('git push')
   console.log('Changes committed and pushed to remote.')
 }
