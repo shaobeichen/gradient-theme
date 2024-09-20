@@ -27,11 +27,7 @@ jobs:
       - name: Install
         run: npm install
 
-      # 发布到 VSCode
-      - name: Publish
-        run: npm run release
-
-      # 执行 semantic-release 发布包 修改版本
+      # 执行 semantic-release 发布包
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
