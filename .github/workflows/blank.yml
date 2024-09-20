@@ -27,10 +27,6 @@ jobs:
       - name: Install
         run: npm install
 
-      # 确保发布脚本有执行权限
-      - name: Make publish script executable
-        run: chmod +x ./scripts/publish.sh
-
       # 执行 semantic-release 发布包
       - name: Release
         env:
