@@ -48,7 +48,7 @@
 
 我基于 [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) ，给它添加了渐变效果。
 
-## 安装
+# 安装
 
 - 在 [ VSCode Marketplace ](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme) 安装主题。
 
@@ -62,7 +62,7 @@
 
 因为开启渐变效果会对 VSCode 的核心文件进行修改，会有 VSCode 已损坏的警告提示，尽管可以移除警告提示，但还是一部分人不希望这样，在底部会有详细说明。
 
-## 渐变效果
+# 渐变效果
 
 ### 开启渐变
 
@@ -80,7 +80,7 @@
 
 在 开启渐变效果 或 关闭渐变效果 后，会有一条提示，点击重启编辑器后，才能看到渐变效果。
 
-## 请注意
+# 请注意
 
 ### 1. 忽略已损坏警告提示
 
@@ -104,11 +104,11 @@
 
 请注意，如果开启了渐变效果，此时你想更换其他主题，最好可以先关闭渐变效果，再选择其他主题，否则渐变主题可能会影响到其他主题的颜色。
 
-## 兼容性
+# 兼容性
 
 这个主题仍然在不断更新优化。我主要使用 HTML、CSS、JS、TS、Vue、React 等进行开发，因此，虽然这些语言和框架看起来不错，但其他语言和框架可能会出现主题并不合适的情况。如果你发现任何明显的问题，可以提出一个问题，我会尽快解决。
 
-## 如何贡献
+# 如何贡献
 
 很高兴你对这个主题感到兴趣，欢迎任何合适的贡献。
 
@@ -120,7 +120,7 @@
 6. Commit 并 Push 你的修改
 7. 提交一份 PR ，请注意并非所有建议都能被接受
 
-## 感谢
+# 感谢
 
 感谢 Lun Dev ,让我有了制作这个渐变主题的灵感。 🙏
 
@@ -132,6 +132,6 @@
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
 
-## 星路历程
+# 星路历程
 
 [![Stargazers over time](https://starchart.cc/shaobeichen/gradient-theme.svg?variant=adaptive)](https://starchart.cc/shaobeichen/gradient-theme)
