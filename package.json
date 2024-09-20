@@ -1,69 +1,73 @@
 {
-  "name": "gradient-theme",
-  "displayName": "Gradient Theme",
-  "description": "Multiple beautiful gradient themes",
-  "version": "1.8.7",
-  "author": "shaobeichen",
-  "publisher": "shaobeichen",
-  "icon": "./icon.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shaobeichen/gradient-theme"
-  },
-  "engines": {
-    "vscode": "^1.33.0"
-  },
-  "keywords": [
-    "gradient",
-    "theme",
-    "渐变"
-  ],
-  "categories": [
-    "Themes"
-  ],
-  "main": "./src/extension.js",
-  "contributes": {
-    "themes": [
-      {
-        "label": "Gradient Dracula Theme",
-        "uiTheme": "vs-dark",
-        "path": "./themes/gradient-dracula-theme.json"
-      },
-      {
-        "label": "Gradient Bearded Theme Arc",
-        "uiTheme": "vs-dark",
-        "path": "./themes/gradient-bearded-theme-arc.json"
-      }
+    "name": "gradient-theme",
+    "displayName": "Gradient Theme",
+    "description": "Multiple beautiful gradient themes",
+    "version": "1.8.7",
+    "author": "shaobeichen",
+    "publisher": "shaobeichen",
+    "icon": "./icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shaobeichen/gradient-theme"
+    },
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "keywords": [
+        "gradient",
+        "theme",
+        "渐变"
     ],
-    "commands": [
-      {
-        "command": "extension.enable",
-        "title": "Gradient Theme: Enable Gradient"
-      },
-      {
-        "command": "extension.disable",
-        "title": "Gradient Theme: Disable Gradient"
-      }
-    ]
-  },
-  "activationEvents": [
-    "onCommand:extension.enable",
-    "onCommand:extension.disable"
-  ],
-  "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/exec": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^10.3.4",
-    "@semantic-release/release-notes-generator": "^14.0.1",
-    "@vscode/vsce": "^3.1.0",
-    "sass": "^1.78.0",
-    "semantic-release": "^24.1.1"
-  },
-  "scripts": {
-    "dev": "node scripts/build.js",
-    "release": "node scripts/release.js",
-    "publish": "vsce publish --no-dependencies"
-  }
+    "categories": [
+        "Themes"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Gradient Dracula Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-dracula-theme.json"
+            },
+            {
+                "label": "Gradient Bearded Theme Arc",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-bearded-theme-arc.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "extension.enable",
+                "title": "Gradient Theme: Enable Gradient"
+            },
+            {
+                "command": "extension.disable",
+                "title": "Gradient Theme: Disable Gradient"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onCommand:extension.enable",
+        "onCommand:extension.disable"
+    ],
+    "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/commit-analyzer": "^13.0.0",
+        "@semantic-release/exec": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^10.3.4",
+        "@semantic-release/release-notes-generator": "^14.0.1",
+        "@vscode/vsce": "^3.1.0",
+        "sass": "^1.78.0",
+        "semantic-release": "^24.1.1",
+        "semantic-release-vsce": "^5.7.4"
+    },
+    "scripts": {
+        "dev": "node scripts/build.js",
+        "release": "node scripts/release.js",
+        "publish": "vsce publish --no-dependencies"
+    },
+    "vsce": {
+        "dependencies": false
+    }
 }
