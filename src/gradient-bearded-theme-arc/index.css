@@ -32,7 +32,7 @@
 }
 
 /* html标签属性 */
-.mtk9 {
+:not(.cursor).mtk9 {
   background-image: linear-gradient(45deg, #eacd61, #ea618e);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -41,12 +41,12 @@
 }
 
 /* html标签 */
-.mtk10 {
+:not(.cursor).mtk10 {
   font-weight: 700;
 }
 
 /* css属性 */
-:not(.colorpicker-color-decoration).mtk1 {
+:not(.cursor):not(.colorpicker-color-decoration).mtk1 {
   background-image: linear-gradient(45deg, #d0d7e4, #b78aff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
