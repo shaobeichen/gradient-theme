@@ -127,3 +127,7 @@ Thanks to the authors of the following themes for their contributions to open so
 **[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)**
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
+
+## Star History
+
+[![Stargazers over time](https://starchart.cc/shaobeichen/gradient-theme.svg?variant=adaptive)](https://starchart.cc/shaobeichen/gradient-theme)

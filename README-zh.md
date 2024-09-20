@@ -125,3 +125,7 @@
 **[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)**
 
 **[Dracula Theme Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)**
+
+## 星路历程
+
+[![Stargazers over time](https://starchart.cc/shaobeichen/gradient-theme.svg?variant=adaptive)](https://starchart.cc/shaobeichen/gradient-theme)
