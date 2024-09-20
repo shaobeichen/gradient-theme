@@ -25,5 +25,5 @@ exe('node scripts/build.js', () => {
     console.error('dist html file is empty!')
     return
   }
-  exe('npm run publish')
+  exe('npx vsce publish --no-dependencies')
 })
