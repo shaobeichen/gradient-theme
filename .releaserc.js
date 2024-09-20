@@ -7,7 +7,7 @@ module.exports = {
       '@semantic-release/exec',
       {
         publishCmd:
-          "'./scripts/publish.sh ${nextRelease.version} ${branch.name} ${commits.length} ${Date.now()}'",
+          './scripts/publish.sh ${nextRelease.version} ${branch.name} ${commits.length} ${Date.now()}',
       },
     ],
     [
