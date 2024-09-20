@@ -12,7 +12,9 @@ English | [中文文档](./README-zh.md)
 
 # Warning
 
-If you are very concerned about the VSCode "corrupted" warning prompt, **it is not recommended** to use this theme.
+![corrupt](./images/corrupt.png)
+
+Although the warning will not affect any functionality, If you are very concerned about the VSCode "corrupted" warning prompt, **it is not recommended** to use this theme.
 
 If you do not want to ignore the "corrupted" warning prompt, please consider carefully whether to use this theme.
 
@@ -68,11 +70,11 @@ If you don't want to ignore the warning prompt, please consider carefully whethe
 
 ![enable command](./images/command.png)
 
-You can enable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "\*\*Gradient Theme: Enable Gradient".
+You can enable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: Enable Gradient**".
 
 ### Disable Gradient
 
-You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "\*\*Gradient Theme: Disable Gradient".
+You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selecting "**Gradient Theme: Disable Gradient**".
 
 ### Restart Editor
 
@@ -83,6 +85,8 @@ After enabling or disabling the gradient effect, there will be a prompt, click t
 # Please Note
 
 ### 1. Ignore the "Corrupted" Warning Prompt
+
+![corrupt](./images/corrupt.png)
 
 Please note that since enabling the gradient effect modifies the core files of VSCode, VSCode will interpret it as a "corrupted" core file, and you may see a warning prompt when restarting the editor, which you can safely ignore.
 
