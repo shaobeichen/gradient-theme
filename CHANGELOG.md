@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/shaobeichen/gradient-theme/compare/v1.0.0...v1.1.0) (2024-09-20)
+
+
+### Features
+
+* support vim plugin cursor gradient ([d843665](https://github.com/shaobeichen/gradient-theme/commit/d843665077f9ca7378f50401ead60922c0b82e43))
+
 # 1.0.0 (2024-09-19)
 
 
