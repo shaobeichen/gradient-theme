@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/shaobeichen/gradient-theme/compare/v1.8.9...v1.9.0) (2024-09-22)
+
+
+### Features
+
+* add gradient monokai pro and classic theme ([69bdc75](https://github.com/shaobeichen/gradient-theme/commit/69bdc7508b67caf9b2ac38bf4597a22e769470bd))
+
 ## [1.8.9](https://github.com/shaobeichen/gradient-theme/compare/v1.8.8...v1.8.9) (2024-09-20)
 
 
