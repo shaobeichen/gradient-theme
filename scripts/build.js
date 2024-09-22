@@ -3,7 +3,12 @@ const path = require('path')
 const sass = require('sass')
 
 const config = {
-  themes: ['gradient-bearded-theme-arc', 'gradient-dracula-theme'],
+  themes: [
+    'gradient-bearded-theme-arc',
+    'gradient-dracula-theme',
+    'gradient-monokai-pro-classic',
+    'gradient-monokai-pro',
+  ],
   classTemplate: 'shaobeichen-gradient-theme-themes-${themeName}-json',
   tagAttr: 'data-gradient-theme-id',
 }

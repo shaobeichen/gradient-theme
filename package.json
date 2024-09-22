@@ -33,6 +33,16 @@
                 "label": "Gradient Bearded Theme Arc",
                 "uiTheme": "vs-dark",
                 "path": "./themes/gradient-bearded-theme-arc.json"
+            },
+            {
+                "label": "Gradient Monokai Pro Classic",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-monokai-pro-classic.json"
+            },
+            {
+                "label": "Gradient Monokai Pro",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-monokai-pro.json"
             }
         ],
         "commands": [

@@ -1,0 +1,50 @@
+/* git 待提交数量徽章样式 */
+.activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
+  background-image: linear-gradient(45deg, #e08a19, #e6db74);
+  border-width: 0 !important;
+  color: rgb(70 70 70) !important;
+}
+
+/* 选中标签栏上边框 */
+@keyframes tabBorderTopMoveGradient {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active {
+  --tab-border-top-color: transparent !important;
+  position: relative;
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 1;
+  background-image: linear-gradient(to right, #eacd61, #ea618e, #3cec85, #61afea);
+  animation: tabBorderTopMoveGradient 3s infinite alternate;
+  background-size: 200%;
+}
+
+/* html标签属性 */
+:not(.cursor).mtk6 {
+  color: #f92672;
+  background-image: linear-gradient(45deg, #db3371, #ff9ec2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+/* html标签 */
+:not(.cursor).mtk7 {
+  color: #66d9ef;
+  background-image: linear-gradient(45deg, #0792ae, #8ae1f3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
