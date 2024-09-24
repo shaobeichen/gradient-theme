@@ -1,83 +1,8 @@
 # [1.9.0](https://github.com/shaobeichen/gradient-theme/compare/v1.8.9...v1.9.0) (2024-09-22)
 
-
 ### Features
 
-* add gradient monokai pro and classic theme ([69bdc75](https://github.com/shaobeichen/gradient-theme/commit/69bdc7508b67caf9b2ac38bf4597a22e769470bd))
-
-## [1.8.9](https://github.com/shaobeichen/gradient-theme/compare/v1.8.8...v1.8.9) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([2aec0ca](https://github.com/shaobeichen/gradient-theme/commit/2aec0caebf0f3fa8b25c70098a66158a48ae1c50))
-
-## [1.8.8](https://github.com/shaobeichen/gradient-theme/compare/v1.8.7...v1.8.8) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([677d037](https://github.com/shaobeichen/gradient-theme/commit/677d0373861250f4eb36f64af3efb89117cc6d71))
-* test ci (please ignore) ([381367a](https://github.com/shaobeichen/gradient-theme/commit/381367a51b07fb2bc3b00b537caa4440e30bf5ea))
-
-## [1.8.7](https://github.com/shaobeichen/gradient-theme/compare/v1.8.6...v1.8.7) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([d09fd29](https://github.com/shaobeichen/gradient-theme/commit/d09fd291b62744598353ef9beb3f071168776859))
-
-## [1.8.6](https://github.com/shaobeichen/gradient-theme/compare/v1.8.5...v1.8.6) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([2bd68d9](https://github.com/shaobeichen/gradient-theme/commit/2bd68d9260e508d4d054b4bc5884d6fa56ad52eb))
-* test ci (please ignore) ([d6c3f1e](https://github.com/shaobeichen/gradient-theme/commit/d6c3f1e074800c7b501ec90eb4e5e3f0c01eab34))
-* test ci (please ignore) ([599b144](https://github.com/shaobeichen/gradient-theme/commit/599b14425ec4297b68e70c6b0ed4a166d69e4839))
-
-## [1.8.6](https://github.com/shaobeichen/gradient-theme/compare/v1.8.5...v1.8.6) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([d6c3f1e](https://github.com/shaobeichen/gradient-theme/commit/d6c3f1e074800c7b501ec90eb4e5e3f0c01eab34))
-* test ci (please ignore) ([599b144](https://github.com/shaobeichen/gradient-theme/commit/599b14425ec4297b68e70c6b0ed4a166d69e4839))
-
-## [1.8.5](https://github.com/shaobeichen/gradient-theme/compare/v1.8.4...v1.8.5) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([34dff65](https://github.com/shaobeichen/gradient-theme/commit/34dff65d84918877bf20f0977b24ac9c28bec522))
-
-## [1.8.4](https://github.com/shaobeichen/gradient-theme/compare/v1.8.3...v1.8.4) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([8c968ed](https://github.com/shaobeichen/gradient-theme/commit/8c968edea7a7fb93fe3acdce845a7a7d47d03290))
-
-## [1.8.3](https://github.com/shaobeichen/gradient-theme/compare/v1.8.2...v1.8.3) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([bf9c802](https://github.com/shaobeichen/gradient-theme/commit/bf9c802897bbd552bcaa4c30f41273e1a0552d5d))
-
-## [1.8.2](https://github.com/shaobeichen/gradient-theme/compare/v1.8.1...v1.8.2) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([8428b65](https://github.com/shaobeichen/gradient-theme/commit/8428b65dfe325cee1865044c5ac74911e76418f8))
-
-## [1.8.1](https://github.com/shaobeichen/gradient-theme/compare/v1.8.0...v1.8.1) (2024-09-20)
-
-
-### Bug Fixes
-
-* test ci (please ignore) ([39feb7a](https://github.com/shaobeichen/gradient-theme/commit/39feb7abb28b80ab40e52c5460d345accd00e674))
+- add gradient monokai pro and classic theme ([69bdc75](https://github.com/shaobeichen/gradient-theme/commit/69bdc7508b67caf9b2ac38bf4597a22e769470bd))
 
 # [1.8.0](https://github.com/shaobeichen/gradient-theme/compare/v1.0.0...v1.8.0) (2024-09-20)
 
