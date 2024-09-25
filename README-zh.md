@@ -38,15 +38,27 @@
 
 ### Gradient Bearded Theme Arc
 
-![Gradient Theme text](./images/gradient-bearded-theme-arc.png)
+![Gradient Theme](./images/gradient-bearded-theme-arc.png)
 
-我基于 [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) 里 Arc 主题，给它添加了渐变效果。
+我基于 [Bearded Theme Arc](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) ，给它添加了渐变效果。
 
 ### Gradient Dracula Theme
 
-![Gradient Theme text](./images/gradient-dracula-theme.png)
+![Gradient Theme](./images/gradient-dracula-theme.png)
 
 我基于 [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) ，给它添加了渐变效果。
+
+### Gradient Monokai Pro
+
+![Gradient Theme](./images/gradient-monokai-pro.png)
+
+我基于 [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) ，给它添加了渐变效果。
+
+### Gradient Monokai Pro Classic
+
+![Gradient Theme](./images/gradient-monokai-pro-classic.png)
+
+我基于 [Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) ，给它添加了渐变效果。
 
 # 安装
 

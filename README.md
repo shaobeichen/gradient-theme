@@ -48,6 +48,18 @@ I added a gradient effect to the Arc theme in [Bearded Theme](https://marketplac
 
 I added a gradient effect to [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
+### Gradient Monokai Pro
+
+![Gradient Theme](./images/gradient-monokai-pro.png)
+
+I added a gradient effect to [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode).
+
+### Gradient Monokai Pro Classic
+
+![Gradient Theme](./images/gradient-monokai-pro-classic.png)
+
+I added a gradient effect to [Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode).
+
 # Installation
 
 - Install the theme from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme).
