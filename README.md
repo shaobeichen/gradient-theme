@@ -60,6 +60,12 @@ I added a gradient effect to [Monokai Pro](https://marketplace.visualstudio.com/
 
 I added a gradient effect to [Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode).
 
+### Gradient Modern Dark
+
+![Gradient Theme](./images/gradient-modern-dark.png)
+
+I added a gradient effect to Modern Dark.
+
 # Installation
 
 - Install the theme from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme).

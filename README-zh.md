@@ -60,6 +60,12 @@
 
 我基于 [Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) ，给它添加了渐变效果。
 
+### Gradient Modern Dark
+
+![Gradient Theme](./images/gradient-modern-dark.png)
+
+我基于 Modern Dark，给它添加了渐变效果。
+
 # 安装
 
 - 在 [ VSCode Marketplace ](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme) 安装主题。
