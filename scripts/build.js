@@ -8,6 +8,7 @@ const config = {
     'gradient-dracula-theme',
     'gradient-monokai-pro-classic',
     'gradient-monokai-pro',
+    'gradient-modern-dark-dark-modern',
   ],
   classTemplate: 'shaobeichen-gradient-theme-themes-${themeName}-json',
   tagAttr: 'data-gradient-theme-id',
