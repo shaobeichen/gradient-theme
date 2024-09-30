@@ -6,5 +6,5 @@ node_modules
 archive/**
 images/**
 scripts/**
-src/archive/**
+archive/**
 .releaserc.js

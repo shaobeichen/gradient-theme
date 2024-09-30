@@ -1,18 +1,17 @@
 const fs = require('fs')
 const path = require('path')
 const sass = require('sass')
+const packageJson = require('../package.json')
 
 const config = {
-  themes: [
-    'gradient-bearded-theme-arc',
-    'gradient-dracula-theme',
-    'gradient-monokai-pro-classic',
-    'gradient-monokai-pro',
-    'gradient-modern-dark-dark-modern',
-  ],
   classTemplate: 'shaobeichen-gradient-theme-themes-${themeName}-json',
   tagAttr: 'data-gradient-theme-id',
+  themes: [],
 }
+
+config.themes = packageJson.contributes.themes.map((item) =>
+  item.path.replace('./themes/', '').replace('.json', '').replace('/', '-'),
+)
 
 const folderPath = path.join(__dirname, '../dist')
 
