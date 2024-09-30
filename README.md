@@ -20,6 +20,48 @@ If you do not want to ignore the "corrupted" warning prompt, please consider car
 
 To be honest, I was very mind at first, but after I ignored the "corrupted" warning prompt, I no longer cared.
 
+# Themes
+
+<table>
+    <tr>
+        <td>
+            <b>Gradient Bearded Theme Arc</b>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded Theme Arc</a> .</div>
+        </td> 
+        <td>
+            <b>Gradient Dracula Theme</b>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula">Dracula Theme</a> .</div>
+        </td> 
+    </tr>
+    <tr>
+        <td><img src=./images/gradient-bearded-theme-arc.png width=600/></td>
+        <td><img src=./images/gradient-dracula-theme.png width=600/></td>
+    </tr>
+    <tr>
+        <td>
+            <b>Gradient Monokai Pro</b>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Bearded Theme Arc</a> .</div>
+        </td> 
+        <td>
+            <b>Gradient Monokai Pro Classic</b>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Dracula Theme</a> .</div>
+        </td> 
+    </tr>
+    <tr>
+        <td><img src=./images/gradient-monokai-pro.png width=600/></td>
+        <td><img src=./images/gradient-monokai-pro-classic.png width=600/></td>
+    </tr>
+    <tr>
+        <td>
+            <b>Gradient Modern Dark</b>
+            <div>I added a gradient effect to in <a href="">Modern Dark</a> .</div>
+        </td>
+    </tr>
+    <tr>
+        <td><img src=./images/gradient-modern-dark.png width=600/></td>
+    </tr>
+</table>
+
 # Inspiration
 
 One day, I saw a video where someone modified the VSCode theme's CSS file themselves.
@@ -33,38 +75,6 @@ Later, many people thought my gradient theme was very beautiful and wanted to us
 But to use it, they needed to install a plugin and I had to give them a CSS file, which was too troublesome!
 
 So I learned how to make a VSCode theme plugin and made this gradient theme plugin.
-
-# Themes
-
-### Gradient Bearded Theme Arc
-
-![Gradient Theme text](./images/gradient-bearded-theme-arc.png)
-
-I added a gradient effect to the Arc theme in [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme).
-
-### Gradient Dracula Theme
-
-![Gradient Theme text](./images/gradient-dracula-theme.png)
-
-I added a gradient effect to [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
-
-### Gradient Monokai Pro
-
-![Gradient Theme](./images/gradient-monokai-pro.png)
-
-I added a gradient effect to [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode).
-
-### Gradient Monokai Pro Classic
-
-![Gradient Theme](./images/gradient-monokai-pro-classic.png)
-
-I added a gradient effect to [Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode).
-
-### Gradient Modern Dark
-
-![Gradient Theme](./images/gradient-modern-dark.png)
-
-I added a gradient effect to Modern Dark.
 
 # Installation
 

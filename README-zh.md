@@ -20,6 +20,48 @@
 
 老实说，我一开始也是很介意，后来我忽略了已损坏警告提示后，再也不介意了。
 
+# 主题
+
+<table>
+    <tr>
+        <td>
+            <b>Gradient Bearded Theme Arc</b>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded Theme Arc</a> ，添加了渐变效果。</div>
+        </td> 
+        <td>
+            <b>Gradient Dracula Theme</b>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula">Dracula Theme</a> ，添加了渐变效果。</div>
+        </td> 
+    </tr>
+    <tr>
+        <td><img src=./images/gradient-bearded-theme-arc.png width=600/></td>
+        <td><img src=./images/gradient-dracula-theme.png width=600/></td>
+    </tr>
+    <tr>
+        <td>
+            <b>Gradient Monokai Pro</b>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Bearded Theme Arc</a> ，添加了渐变效果。</div>
+        </td> 
+        <td>
+            <b>Gradient Monokai Pro Classic</b>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Dracula Theme</a> ，添加了渐变效果。</div>
+        </td> 
+    </tr>
+    <tr>
+        <td><img src=./images/gradient-monokai-pro.png width=600/></td>
+        <td><img src=./images/gradient-monokai-pro-classic.png width=600/></td>
+    </tr>
+    <tr>
+        <td>
+            <b>Gradient Modern Dark</b>
+            <div>基于 <a href="">Modern Dark</a> ，添加了渐变效果。</div>
+        </td>
+    </tr>
+    <tr>
+        <td><img src=./images/gradient-modern-dark.png width=600/></td>
+    </tr>
+</table>
+
 # 灵感
 
 有一天我看到了一个自已修改 VSCode 主题 CSS 文件的视频，
@@ -33,38 +75,6 @@
 但是如果要使用它的话，需要安装插件还需要我给他们一份 CSS 文件，这太麻烦了！
 
 于是我去学习了如何制作一个 VSCode 主题插件，做出了这个渐变色主题插件。
-
-# 主题
-
-### Gradient Bearded Theme Arc
-
-![Gradient Theme](./images/gradient-bearded-theme-arc.png)
-
-我基于 [Bearded Theme Arc](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme) ，给它添加了渐变效果。
-
-### Gradient Dracula Theme
-
-![Gradient Theme](./images/gradient-dracula-theme.png)
-
-我基于 [Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) ，给它添加了渐变效果。
-
-### Gradient Monokai Pro
-
-![Gradient Theme](./images/gradient-monokai-pro.png)
-
-我基于 [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) ，给它添加了渐变效果。
-
-### Gradient Monokai Pro Classic
-
-![Gradient Theme](./images/gradient-monokai-pro-classic.png)
-
-我基于 [Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) ，给它添加了渐变效果。
-
-### Gradient Modern Dark
-
-![Gradient Theme](./images/gradient-modern-dark.png)
-
-我基于 Modern Dark，给它添加了渐变效果。
 
 # 安装
 
