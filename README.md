@@ -40,11 +40,11 @@ To be honest, I was very mind at first, but after I ignored the "corrupted" warn
     <tr>
         <td>
             <b>Gradient Monokai Pro</b>
-            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Bearded Theme Arc</a> .</div>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai Pro</a> .</div>
         </td> 
         <td>
             <b>Gradient Monokai Pro Classic</b>
-            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Dracula Theme</a> .</div>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai Pro Classic</a> .</div>
         </td> 
     </tr>
     <tr>

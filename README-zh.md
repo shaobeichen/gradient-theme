@@ -40,11 +40,11 @@
     <tr>
         <td>
             <b>Gradient Monokai Pro</b>
-            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Bearded Theme Arc</a> ，添加了渐变效果。</div>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai Pro</a> ，添加了渐变效果。</div>
         </td> 
         <td>
             <b>Gradient Monokai Pro Classic</b>
-            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Dracula Theme</a> ，添加了渐变效果。</div>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode">Monokai Pro Classic</a> ，添加了渐变效果。</div>
         </td> 
     </tr>
     <tr>
