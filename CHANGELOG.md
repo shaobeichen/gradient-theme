@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/shaobeichen/gradient-theme/compare/v1.11.0...v1.11.1) (2024-10-09)
+
+
+### Bug Fixes
+
+* fix 1.95.0 main file name ([dad4370](https://github.com/shaobeichen/gradient-theme/commit/dad4370354e293707e8cdc9630a83e5097069612))
+
 # [1.11.0](https://github.com/shaobeichen/gradient-theme/compare/v1.10.1...v1.11.0) (2024-10-09)
 
 
