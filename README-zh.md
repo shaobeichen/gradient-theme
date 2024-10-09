@@ -34,8 +34,8 @@
         </td> 
     </tr>
     <tr>
-        <td><img src=./images/gradient-bearded-theme-arc.png width=600/></td>
-        <td><img src=./images/gradient-dracula-theme.png width=600/></td>
+        <td><img src="./images/gradient-bearded-theme-arc.png" width=600/></td>
+        <td><img src="./images/gradient-dracula-theme.png" width=600/></td>
     </tr>
     <tr>
         <td>
@@ -48,8 +48,8 @@
         </td> 
     </tr>
     <tr>
-        <td><img src=./images/gradient-monokai-pro.png width=600/></td>
-        <td><img src=./images/gradient-monokai-pro-classic.png width=600/></td>
+        <td><img src="./images/gradient-monokai-pro.png" width=600/></td>
+        <td><img src="./images/gradient-monokai-pro-classic.png" width=600/></td>
     </tr>
     <tr>
         <td>
@@ -62,7 +62,7 @@
         </td>
     </tr>
     <tr>
-        <td><img src=./images/gradient-modern-dark.png width=600/></td>
+        <td><img src="./images/gradient-modern-dark.png" width=600/></td>
     </tr>
 </table>
 
