@@ -14,6 +14,13 @@ function isVSCodeBelowVersion(version) {
   return versionArray.some((item, index) => vscodeVersionArray[index] < item)
 }
 
+function isVSCodeEqualsVersion(version) {
+  const vscodeVersion = vscode.version.split('-')[0]
+  const vscodeVersionArray = vscodeVersion.split('.')
+  const versionArray = version.split('.')
+  return versionArray.every((item, index) => vscodeVersionArray[index] === item)
+}
+
 function showReloadMessage(message) {
   vscode.window
     .showInformationMessage(message, { title: 'Restart editor to complete' })
@@ -26,7 +33,7 @@ const isWin = /^win/.test(process.platform)
 const appDir = `${path.dirname(vscode.env.appRoot)}/app/out`
 const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
 const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
-const htmlFileName = isVSCodeBelowVersion('1.94.0') ? 'workbench.html' : 'workbench.esm.html'
+const htmlFileName = isVSCodeEqualsVersion('1.94.0') ? 'workbench.esm.html' : 'workbench.html'
 const htmlFile =
   base +
   (isWin
