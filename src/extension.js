@@ -33,7 +33,7 @@ const isWin = /^win/.test(process.platform)
 const appDir = `${path.dirname(vscode.env.appRoot)}/app/out`
 const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
 const electronBase = isVSCodeBelowVersion('1.70.0') ? 'electron-browser' : 'electron-sandbox'
-const htmlFileName = isVSCodeEqualsVersion('1.94.0') ? 'workbench.esm.html' : 'workbench.html'
+const htmlFileName = isVSCodeEqualsVersion('1.94') ? 'workbench.esm.html' : 'workbench.html'
 const htmlFile =
   base +
   (isWin
