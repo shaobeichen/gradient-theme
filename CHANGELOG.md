@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/shaobeichen/gradient-theme/compare/v1.10.1...v1.11.0) (2024-10-09)
+
+
+### Features
+
+* add gradient atom one dark ([910d1c7](https://github.com/shaobeichen/gradient-theme/commit/910d1c7d054c52c209bda5d44fff664da1639589))
+
 ## [1.10.1](https://github.com/shaobeichen/gradient-theme/compare/v1.10.0...v1.10.1) (2024-09-26)
 
 
