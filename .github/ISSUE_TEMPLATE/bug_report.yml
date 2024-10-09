@@ -25,6 +25,7 @@ body:
     id: version
     attributes:
       label: plugin version / 插件版本
+      placeholder: 1.11.0
     validations:
       required: true
 
@@ -39,12 +40,14 @@ body:
     id: system-info
     attributes:
       label: System Info / 系统信息
+      placeholder: Window10, Window11, Mac
     validations:
       required: true
-      placeholder: Window10, Window11, Mac
 
   - type: textarea
     id: vscode-info
     attributes:
       label: VSCode Info / VSCode信息
       description: Open VSCode, click on the Help menu in the upper left corner, and select the About option. / 打开 VSCode，点击左上角的 帮助 菜单，选择 关于 选项。
+    validations:
+      required: true

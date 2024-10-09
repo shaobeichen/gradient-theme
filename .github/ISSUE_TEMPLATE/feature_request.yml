@@ -5,6 +5,6 @@ body:
     id: actually-happening
     attributes:
       label: Function Description / 功能描述
+      placeholder: Clearly and concisely describe the features you wish to add. / 清晰简洁地描述你希望添加的功能。
     validations:
       required: true
-      placeholder: Clearly and concisely describe the features you wish to add. / 清晰简洁地描述你希望添加的功能。
