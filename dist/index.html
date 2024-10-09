@@ -208,6 +208,58 @@
 </style>
 
 <style data-gradient-theme-id>
+.shaobeichen-gradient-theme-themes-gradient-atom-one-dark-json { /* git 待提交数量徽章样式 */
+  /* 选中标签栏上边框 */
+  /* html标签属性 */
+  /* html标签 */
+}
+.shaobeichen-gradient-theme-themes-gradient-atom-one-dark-json .activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
+  background-image: linear-gradient(45deg, #d44a8e, #ffcb99);
+  border-width: 0 !important;
+  color: rgb(70, 70, 70) !important;
+}
+@keyframes tabBorderTopMoveGradient {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+.shaobeichen-gradient-theme-themes-gradient-atom-one-dark-json .tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active {
+  --tab-border-top-color: transparent !important;
+  position: relative;
+}
+.shaobeichen-gradient-theme-themes-gradient-atom-one-dark-json .tab.tab-actions-right.sizing-fit.has-icon.tab-border-top.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 1;
+  background-image: linear-gradient(to right, #eacd61, #ea618e, #3cec85, #61afea);
+  animation: tabBorderTopMoveGradient 3s infinite alternate;
+  background-size: 200%;
+}
+.shaobeichen-gradient-theme-themes-gradient-atom-one-dark-json :not(.cursor).mtk7 {
+  color: #d19a66;
+  background-image: linear-gradient(45deg, #cb5c4f, #ffcb99);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-style: italic;
+}
+.shaobeichen-gradient-theme-themes-gradient-atom-one-dark-json :not(.cursor).mtk9 {
+  color: #e06c75;
+  background-image: linear-gradient(45deg, #df3389, #cc9696);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+</style>
+
+<style data-gradient-theme-id>
 .shaobeichen-gradient-theme-themes-gradient-modern-dark-dark-modern-json { /* git 待提交数量徽章样式 */
   /* 选中标签栏上边框 */
   /* html标签属性 */

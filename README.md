@@ -56,10 +56,15 @@ To be honest, I was very mind at first, but after I ignored the "corrupted" warn
             <b>Gradient Modern Dark</b>
             <div>I added a gradient effect to in <a href="">Modern Dark</a> .</div>
         </td>
+        <td>
+            <b>Gradient Atom One Dark</b>
+            <div>I added a gradient effect to in <a href="">Atom One Dark</a> .</div>
+        </td>
     </tr>
     <tr>
         <td><img src=./images/gradient-modern-dark.png width=600/></td>
     </tr>
+
 </table>
 
 # Inspiration

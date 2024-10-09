@@ -56,6 +56,10 @@
             <b>Gradient Modern Dark</b>
             <div>基于 <a href="">Modern Dark</a> ，添加了渐变效果。</div>
         </td>
+        <td>
+            <b>Gradient Atom One Dark</b>
+            <div>基于 <a href="">Atom One Dark</a> ，添加了渐变效果。</div>
+        </td>
     </tr>
     <tr>
         <td><img src=./images/gradient-modern-dark.png width=600/></td>

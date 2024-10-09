@@ -45,6 +45,11 @@
                 "path": "./themes/gradient-monokai-pro.json"
             },
             {
+                "label": "Gradient Atom One Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-atom-one-dark.json"
+            },
+            {
                 "label": "Gradient Modern Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/gradient-modern-dark/dark-modern.json"
