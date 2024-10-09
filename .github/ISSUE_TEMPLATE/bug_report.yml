@@ -1,0 +1,50 @@
+name: 'Bug report / 上报BUG'
+description: 'Create a report to help us improve / 创建报告以帮助我们改进'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before You Start...**
+
+        This form is only for submitting bug reports. If you have a usage question
+        or are unsure if this is really a bug, make sure to:
+
+        - Read the [docs](https://github.com/shaobeichen/gradient-theme/blob/main/README.md)
+
+        Also try to search for your issue - it may have already been answered or even fixed in the development branch. 
+
+        **在开始之前**
+
+        此表单仅用于提交错误报告，如果您有使用问题或者不确定这是否真的是一个bug，请确保：
+
+        - 阅读[文档](https://github.com/shaobeichen/gradient-theme/blob/main/README.md)
+
+        也试着搜索你的问题——它可能已经在开发分支中得到了回答，甚至得到了修复。
+
+  - type: input
+    id: version
+    attributes:
+      label: plugin version / 插件版本
+    validations:
+      required: true
+
+  - type: textarea
+    id: actually-happening
+    attributes:
+      label: What is the problem you encountered? What actually happened? What is the performance? / 你遇到的问题是什么？实际发生了什么？表现是什么？
+    validations:
+      required: true
+
+  - type: input
+    id: system-info
+    attributes:
+      label: System Info / 系统信息
+    validations:
+      required: true
+      placeholder: Window10, Window11, Mac
+
+  - type: textarea
+    id: vscode-info
+    attributes:
+      label: VSCode Info / VSCode信息
+      description: Open VSCode, click on the Help menu in the upper left corner, and select the About option. / 打开 VSCode，点击左上角的 帮助 菜单，选择 关于 选项。

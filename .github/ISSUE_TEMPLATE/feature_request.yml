@@ -1,0 +1,10 @@
+name: 'Feature Request / 请求新功能'
+description: 'Create a report to request feature / 创建一个报告请求新功能'
+body:
+  - type: textarea
+    id: actually-happening
+    attributes:
+      label: Function Description / 功能描述
+    validations:
+      required: true
+      placeholder: Clearly and concisely describe the features you wish to add. / 清晰简洁地描述你希望添加的功能。
