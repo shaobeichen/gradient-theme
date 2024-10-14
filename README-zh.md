@@ -58,7 +58,7 @@
         </td>
         <td>
             <b>Gradient Atom One Dark</b>
-            <div>基于 <a href="">Atom One Dark</a> ，添加了渐变效果。</div>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark">Atom One Dark</a> ，添加了渐变效果。</div>
         </td>
     </tr>
     <tr>
@@ -168,3 +168,5 @@
 **[Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)**
 
 **[Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)**
+
+**[Atom One Dark](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)**

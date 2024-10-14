@@ -58,7 +58,7 @@ To be honest, I was very mind at first, but after I ignored the "corrupted" warn
         </td>
         <td>
             <b>Gradient Atom One Dark</b>
-            <div>I added a gradient effect to in <a href="">Atom One Dark</a> .</div>
+            <div>I added a gradient effect to in <a href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark">Atom One Dark</a> .</div>
         </td>
     </tr>
     <tr>
@@ -171,3 +171,5 @@ Thanks to the authors of the following themes for their contributions to open so
 **[Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)**
 
 **[Monokai Pro Classic](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)**
+
+**[Atom One Dark](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)**
