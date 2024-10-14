@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/shaobeichen/gradient-theme/compare/v1.11.2...v1.11.3) (2024-10-14)
+
+
+### Bug Fixes
+
+* add gradient ato one dark theme docs ([aae5c6a](https://github.com/shaobeichen/gradient-theme/commit/aae5c6a0163d8a518d51342c7faae00b040e5d33))
+
 ## [1.11.2](https://github.com/shaobeichen/gradient-theme/compare/v1.11.1...v1.11.2) (2024-10-09)
 
 
