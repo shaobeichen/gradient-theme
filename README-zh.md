@@ -63,6 +63,7 @@
     </tr>
     <tr>
         <td><img src="./images/gradient-modern-dark.png" width=600/></td>
+        <td><img src="./images/gradient-atom-one-dark.png" width=600/></td>
     </tr>
 </table>
 
