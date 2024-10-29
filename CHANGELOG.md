@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/shaobeichen/gradient-theme/compare/v1.11.3...v1.12.0) (2024-10-29)
+
+
+### Features
+
+* support user custom gradient theme ([6bec359](https://github.com/shaobeichen/gradient-theme/commit/6bec359bf651e0d590638331b85c255d95e050bf))
+
 ## [1.11.3](https://github.com/shaobeichen/gradient-theme/compare/v1.11.2...v1.11.3) (2024-10-14)
 
 
