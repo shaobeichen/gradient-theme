@@ -64,7 +64,22 @@
                 "command": "extension.disable",
                 "title": "Gradient Theme: Disable Gradient"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Gradient Theme",
+            "properties": {
+                "gradientTheme.css": {
+                    "type": "array",
+                    "default": [
+                        {
+                            "enable": false,
+                            "css": ""
+                        }
+                    ],
+                    "description": "custom css for the gradient theme"
+                }
+            }
+        }
     },
     "activationEvents": [
         "onCommand:extension.enable",

@@ -69,12 +69,26 @@ function reset() {
 }
 
 function install() {
+  const themeConfig = vscode.workspace.getConfiguration('gradientTheme')
+  const css = themeConfig ? themeConfig.css : []
+  const customCssOutHtml = css
+    .filter((item) => item.enable)
+    .reduce((prev, cur) => {
+      return (
+        prev +
+        `
+    <style ${tagAttr}>
+    ${cur.css}
+    </style>
+    `
+      )
+    }, '')
+
   const distIndexHtmlFile = path.join(__dirname, '../dist/index.html')
   const html = getResetContent()
   const styleHtml = fs.readFileSync(distIndexHtmlFile, 'utf-8')
-  const output = html.replace('</html>', '') + styleHtml + '</html>'
+  const output = html.replace('</html>', '') + customCssOutHtml + styleHtml + '</html>'
   fs.writeFileSync(htmlFile, output, 'utf-8')
-
   showReloadMessage(enableMessage)
 }
 
