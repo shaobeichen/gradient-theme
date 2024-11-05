@@ -116,6 +116,38 @@ You can disable it by pressing `Ctrl + Shift + P` or `Shift + ⌘ + P` and selec
 
 After enabling or disabling the gradient effect, there will be a prompt, click to restart the editor to see the gradient effect.
 
+# Custom Theme
+
+When you feel that the current gradient theme effect is not good, you can customize the gradient theme yourself.
+
+Please note that if you have enabled custom gradient effects, regardless of which theme you switch to, the gradient effects will be displayed as your own.
+
+At present, the first version of the custom theme function is simple, and it will be further improved in the future.
+
+Customized theme video teaching address, to be supplemented.
+
+#### 1. Open Settings
+
+![custom-theme-setting](./images/custom-theme-setting.png)
+
+#### 2. Find gradient theme settings
+
+Open the settings, search for 'gradient css', find' Gradient Theme: CSS', and click on 'edit in settings. json'.
+
+![custom-theme-search](./images/custom-theme-search.png)
+
+#### 3. Add custom gradient style
+
+Add custom CSS, array types, and support for writing multiple gradient styles in seting.json, but only one will take effect` 'enable' means true to enable this custom gradient theme CSS, 'false' means off, and 'css' means the content of the custom gradient theme CSS.
+
+Note that CSS needs to be compressed into one line. The compression method can refer to [Online Compression Tool]（ https://tool.chinaz.com/tools/cssformat.aspx ）.
+
+![custom-theme-json](./images/custom-theme-json.png)
+
+#### 4. Enable gradient and restart the editor
+
+After writing CSS, you need to manually enable gradient and restart the editor. The method of enabling gradients is mentioned above in the document.
+
 # Please Note
 
 ### 1. Ignore the "Corrupted" Warning Prompt

@@ -113,6 +113,38 @@
 
 在 开启渐变效果 或 关闭渐变效果 后，会有一条提示，点击重启编辑器后，才能看到渐变效果。
 
+# 自定义主题
+
+当你觉得当前渐变主题效果不好，可以自己自定义渐变主题。
+
+请注意，你如果开启了自定义渐变效果，那么不论你切换哪种主题，都会显示为你自定义的渐变效果。
+
+目前第一版自定义主题功能简略，后续会继续完善。
+
+自定义主题视频教学地址，待补充。
+
+#### 1. 打开设置
+
+![custom-theme-setting](./images/custom-theme-setting.png)
+
+#### 2. 找到渐变主题设置
+
+打开设置，搜索 `gradient css`，找到 `Gradient Theme: CSS`，点击 在 setting.json 里编辑。
+
+![custom-theme-search](./images/custom-theme-search.png)
+
+#### 3. 添加自定义渐变样式
+
+在 setting.json 里添加自定义 CSS，数组类型，支持编写多个渐变样式，但只有一个会生效。`enable` 为 true 表示开启这个自定义渐变主题 css，false 表示关闭，`css`表示自定义渐变主题 css 内容。
+
+注意 css 需要压缩为一行。压缩方法可以参考 [在线压缩工具](https://tool.chinaz.com/tools/cssformat.aspx)。
+
+![custom-theme-json](./images/custom-theme-json.png)
+
+#### 4. 开启渐变重启编辑器
+
+css 编写好后，需要手动开启渐变重启编辑器。开启渐变的方法在文档上方有提及。
+
 # 请注意
 
 ### 1. 忽略已损坏警告提示
