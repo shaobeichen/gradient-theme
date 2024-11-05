@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/shaobeichen/gradient-theme/compare/v1.12.0...v1.12.1) (2024-11-05)
+
+
+### Bug Fixes
+
+* update custom gradient theme doc ([4ffabf7](https://github.com/shaobeichen/gradient-theme/commit/4ffabf7677a0e8f57d0ab805cff01e6b6c364ffb))
+
 # [1.12.0](https://github.com/shaobeichen/gradient-theme/compare/v1.11.3...v1.12.0) (2024-10-29)
 
 
