@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/shaobeichen/gradient-theme/compare/v1.12.1...v1.12.2) (2024-11-05)
+
+
+### Bug Fixes
+
+* add plugin keywords ([f0f1774](https://github.com/shaobeichen/gradient-theme/commit/f0f1774d4456621dd4e2d11154dbb05c65720ad1))
+
 ## [1.12.1](https://github.com/shaobeichen/gradient-theme/compare/v1.12.0...v1.12.1) (2024-11-05)
 
 
