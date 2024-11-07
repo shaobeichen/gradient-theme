@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/shaobeichen/gradient-theme/compare/v1.12.2...v1.13.0) (2024-11-07)
+
+
+### Features
+
+* update bearded theme arc mkt1 ([53597db](https://github.com/shaobeichen/gradient-theme/commit/53597db91414500455c5ca0f5908544956e1733c))
+
 ## [1.12.2](https://github.com/shaobeichen/gradient-theme/compare/v1.12.1...v1.12.2) (2024-11-05)
 
 
