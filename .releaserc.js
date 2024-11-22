@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2024 shaobeichen <shaobeichen@outlook.com>
+ * All rights reserved.
+ */
+
 module.exports = {
   branches: ['main'], // 指定在哪个分支下要执行发布操作
   plugins: [

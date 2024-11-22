@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2024 shaobeichen <shaobeichen@outlook.com>
+ * All rights reserved.
+ */
+
 const fs = require('fs')
 const path = require('path')
 const { exec } = require('child_process')

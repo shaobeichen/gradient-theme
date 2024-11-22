@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2024 shaobeichen <shaobeichen@outlook.com>
+ * All rights reserved.
+ */
+
 const path = require('path')
 const fs = require('fs')
 const vscode = require('vscode')

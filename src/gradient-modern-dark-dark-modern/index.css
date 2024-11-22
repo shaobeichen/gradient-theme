@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2024 shaobeichen <shaobeichen@outlook.com>
+ * All rights reserved.
+ */
+
 /* git 待提交数量徽章样式 */
 .activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
   background-image: linear-gradient(45deg, #0078d4, #71c1ff);
