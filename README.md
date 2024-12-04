@@ -124,7 +124,9 @@ Please note that if you have enabled custom gradient effects, regardless of whic
 
 At present, the first version of the custom theme function is simple, and it will be further improved in the future.
 
-Customized theme video teaching address, to be supplemented.
+### Customized theme video teaching url
+
+https://www.bilibili.com/video/BV1FemxYYEAv
 
 #### 1. Open Settings
 
