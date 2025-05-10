@@ -14,43 +14,22 @@ const config = {
   vscodeVersionKey: 'data-gradient-theme-vscode-version',
 }
 
-/**
- * 判断vscode版本是否低于指定版本
- * @param {*} version
- * @returns
- */
-function isVSCodeBelowVersion(version) {
-  const vscodeVersion = vscode.version.split('-')[0]
-  const vscodeVersionArray = vscodeVersion.split('.')
-  const versionArray = version.split('.')
-  return versionArray.some((item, index) => vscodeVersionArray[index] < item)
-}
+// 插件上下文
+let context = null
 
-/**
- * 判断vscode版本是否等于指定版本
- * @param {*} version
- * @returns
- */
-function isVSCodeEqualsVersion(version) {
-  const vscodeVersion = vscode.version.split('-')[0]
-  const vscodeVersionArray = vscodeVersion.split('.')
-  const versionArray = version.split('.')
-  return versionArray.every((item, index) => vscodeVersionArray[index] === item)
+const appDir = require.main ? path.dirname(require.main.filename) : globalThis._VSCODE_FILE_ROOT
+const base = path.join(appDir, 'vs', 'code')
+let htmlFile = path.join(base, 'electron-sandbox', 'workbench', 'workbench.html')
+// support Cursor IDE
+if (!fs.existsSync(htmlFile)) {
+  htmlFile = path.join(base, 'electron-sandbox', 'workbench', 'workbench-apc-extension.html')
 }
-
-const isWin = /^win/.test(process.platform)
-const appDir = `${path.dirname(vscode.env.appRoot)}/app/out`
-const base = appDir + (isWin ? '\\vs\\code' : '/vs/code')
-const electronBase =
-  isVSCodeBelowVersion('1.70.0') && !isVSCodeEqualsVersion('1.100')
-    ? 'electron-browser'
-    : 'electron-sandbox'
-const htmlFileName = isVSCodeEqualsVersion('1.94') ? 'workbench.esm.html' : 'workbench.html'
-const htmlFile =
-  base +
-  (isWin
-    ? '\\' + electronBase + '\\workbench\\' + htmlFileName
-    : '/' + electronBase + '/workbench/' + htmlFileName)
+if (!fs.existsSync(htmlFile)) {
+  htmlFile = path.join(base, 'electron-sandbox', 'workbench', 'workbench.esm.html')
+}
+if (!fs.existsSync(htmlFile)) {
+  htmlFile = path.join(base, 'electron-browser', 'workbench', 'workbench.esm.html')
+}
 
 const enableCommonMessage = `VSCode must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
 
@@ -62,9 +41,6 @@ const disableCommand = prefix + '.' + disableName
 
 const enableMessage = 'Gradient ' + enableName + 'd. ' + enableCommonMessage
 const disableMessage = 'Gradient ' + disableName + 'd. ' + enableCommonMessage
-
-// 插件上下文
-let context = null
 
 /**
  * 获取重置html后的html内容，删除所有插件插入的style和script
