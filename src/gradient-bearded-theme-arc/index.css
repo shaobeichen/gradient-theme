@@ -56,3 +56,12 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 } */
+
+/* 处理 #45 */
+:not(.cursor).mtk11 {
+  color: rgba(208, 215, 228, 0.68);
+}
+
+:not(.cursor).mtk5 {
+  color: rgba(202, 213, 234, 0.55);
+}
