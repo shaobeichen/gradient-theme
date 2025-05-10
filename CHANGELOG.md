@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/shaobeichen/gradient-theme/compare/v1.14.0...v1.15.0) (2025-05-10)
+
+
+### Features
+
+* support Cursor IDE and ssh ([f75af11](https://github.com/shaobeichen/gradient-theme/commit/f75af11e986ef4f3b8f6e17bd972096d717bfed4))
+
 # [1.14.0](https://github.com/shaobeichen/gradient-theme/compare/v1.13.1...v1.14.0) (2025-05-10)
 
 
