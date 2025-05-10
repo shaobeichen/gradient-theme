@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/shaobeichen/gradient-theme/compare/v1.15.0...v1.15.1) (2025-05-10)
+
+
+### Bug Fixes
+
+* handle comment opacity ([80ce1ee](https://github.com/shaobeichen/gradient-theme/commit/80ce1ee0a1c3699eee0f01d121861d0e67b6d12c))
+
 # [1.15.0](https://github.com/shaobeichen/gradient-theme/compare/v1.14.0...v1.15.0) (2025-05-10)
 
 
