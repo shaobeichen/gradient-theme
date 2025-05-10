@@ -87,6 +87,7 @@
         }
     },
     "activationEvents": [
+        "onStartupFinished",
         "onCommand:extension.enable",
         "onCommand:extension.disable"
     ],

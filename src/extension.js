@@ -10,8 +10,15 @@ const vscode = require('vscode')
 const config = {
   extensionName: 'shaobeichen.gradient-theme',
   tagAttr: 'data-gradient-theme-id',
+  // vscode版本的key 用来存在globalState中
+  vscodeVersionKey: 'data-gradient-theme-vscode-version',
 }
 
+/**
+ * 判断vscode版本是否低于指定版本
+ * @param {*} version
+ * @returns
+ */
 function isVSCodeBelowVersion(version) {
   const vscodeVersion = vscode.version.split('-')[0]
   const vscodeVersionArray = vscodeVersion.split('.')
@@ -19,19 +26,16 @@ function isVSCodeBelowVersion(version) {
   return versionArray.some((item, index) => vscodeVersionArray[index] < item)
 }
 
+/**
+ * 判断vscode版本是否等于指定版本
+ * @param {*} version
+ * @returns
+ */
 function isVSCodeEqualsVersion(version) {
   const vscodeVersion = vscode.version.split('-')[0]
   const vscodeVersionArray = vscodeVersion.split('.')
   const versionArray = version.split('.')
   return versionArray.every((item, index) => vscodeVersionArray[index] === item)
-}
-
-function showReloadMessage(message) {
-  vscode.window
-    .showInformationMessage(message, { title: 'Restart editor to complete' })
-    .then(function (msg) {
-      vscode.commands.executeCommand('workbench.action.reloadWindow')
-    })
 }
 
 const isWin = /^win/.test(process.platform)
@@ -48,7 +52,7 @@ const htmlFile =
     ? '\\' + electronBase + '\\workbench\\' + htmlFileName
     : '/' + electronBase + '/workbench/' + htmlFileName)
 
-const enableCommonMessage = `VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
+const enableCommonMessage = `VSCode must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
 
 const prefix = 'extension'
 const enableName = 'enable'
@@ -59,23 +63,34 @@ const disableCommand = prefix + '.' + disableName
 const enableMessage = 'Gradient ' + enableName + 'd. ' + enableCommonMessage
 const disableMessage = 'Gradient ' + disableName + 'd. ' + enableCommonMessage
 
-const tagAttr = config.tagAttr
+// 插件上下文
+let context = null
 
+/**
+ * 获取重置html后的html内容，删除所有插件插入的style和script
+ * @returns
+ */
 function getResetContent() {
   const html = fs.readFileSync(htmlFile, 'utf-8')
   const regex = new RegExp(
-    `<style[^>]*${tagAttr}[^>]*>.*?</style>|<script[^>]*${tagAttr}[^>]*>.*?</script>`,
+    `<style[^>]*${config.tagAttr}[^>]*>.*?</style>|<script[^>]*${config.tagAttr}[^>]*>.*?</script>`,
     'gs',
   )
   const output = html.replace(regex, '')
   return output
 }
 
+/**
+ * 重置html文件，用于删除所有插件插入的style和script
+ */
 function reset() {
   const output = getResetContent()
   fs.writeFileSync(htmlFile, output, 'utf-8')
 }
 
+/**
+ * enable命令后，启动主题样式插入逻辑
+ */
 function install() {
   const themeConfig = vscode.workspace.getConfiguration('gradientTheme')
   const css = themeConfig ? themeConfig.css : []
@@ -85,7 +100,7 @@ function install() {
       return (
         prev +
         `
-    <style ${tagAttr}>
+    <style ${config.tagAttr}>
     ${cur.css}
     </style>
     `
@@ -98,26 +113,120 @@ function install() {
   const output = html.replace('</html>', '') + customCssOutHtml + styleHtml + '</html>'
   fs.writeFileSync(htmlFile, output, 'utf-8')
   showReloadMessage(enableMessage)
+
+  updateGlobalStateVscodeVersion()
 }
 
+/**
+ * uninstall命令后，重置html文件
+ */
 function uninstall() {
   reset()
 
   showReloadMessage(disableMessage)
 }
 
-function registerCommand(context) {
+/**
+ * 注册命令
+ * 注册enableCommand和disableCommand命令
+ */
+function registerCommand() {
   const disposable = vscode.commands.registerCommand(enableCommand, install)
   const disable = vscode.commands.registerCommand(disableCommand, uninstall)
   context.subscriptions.push(disposable)
   context.subscriptions.push(disable)
 }
 
-function activate(context) {
-  this.extensionName = config.extensionName
-  this.cntx = context
+/**
+ * 显示重启提示，点击重启后会自动重启vscode
+ * @param {*} message
+ */
+function showReloadMessage(message) {
+  vscode.window
+    .showInformationMessage(message, { title: 'Restart editor to complete' })
+    .then(function (msg) {
+      vscode.commands.executeCommand('workbench.action.reloadWindow')
+    })
+}
 
-  registerCommand(context)
+/**
+ * 显示提示（多用于打印日志）
+ * @param {*} message
+ */
+function showMessage(message) {
+  vscode.window.showInformationMessage(message)
+}
+
+/**
+ * 更新全局状态
+ * @param {*} key
+ * @param {*} value
+ */
+function updateGlobalState(key, value) {
+  context.globalState.update(key, value)
+}
+
+/**
+ * 获取全局状态
+ * @param {*} key
+ * @returns
+ */
+function getGlobalState(key) {
+  return context.globalState.get(key)
+}
+
+/**
+ * 状态中获取vscode版本
+ * 举例：data-gradient-theme-vscode-version 1.100.0
+ */
+function getGlobalStateVscodeVersion() {
+  return getGlobalState(config.vscodeVersionKey)
+}
+
+/**
+ * 往状态中存vscode版本
+ */
+function updateGlobalStateVscodeVersion() {
+  const vscodeVersion = vscode.version.split('-')[0]
+  updateGlobalState(config.vscodeVersionKey, vscodeVersion)
+}
+
+/**
+ * 状态中删vscode版本
+ */
+function removeGlobalStateVscodeVersion() {
+  updateGlobalState(config.vscodeVersionKey, '')
+}
+
+/**
+ * 是否在过往安装过插件
+ * 注意：卸载插件，卸载vscode，全局状态会消失
+ */
+function isInstalledInThePast() {
+  return getGlobalStateVscodeVersion()
+}
+
+/**
+ * 初始化通过vscode版本判断是否需要自动提示重启
+ *
+ * 通过vscode版本判断实现vscode更新后能自动提示重启并启动渐变
+ * （背景：vscode一更新，html里的东西会被清空，导致每次更新都要手动启动命令，麻烦）
+ */
+function initGlobalStateVscodeVersion() {
+  const realVscodeVersion = vscode.version.split('-')[0]
+  const htmlVscodeVersion = getGlobalStateVscodeVersion()
+  // 如果过去安装过插件，并且vscode版本不一致（代表vscode更新了），就重新提示安装提醒，点击重启就能安装插件
+  if (realVscodeVersion !== htmlVscodeVersion && isInstalledInThePast()) {
+    install()
+  }
+}
+
+function activate(ctx) {
+  this.extensionName = config.extensionName
+  this.context = ctx
+  context = ctx
+  registerCommand()
+  initGlobalStateVscodeVersion()
 }
 
 exports.activate = activate
