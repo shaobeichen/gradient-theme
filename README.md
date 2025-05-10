@@ -166,14 +166,6 @@ If you do not want to ignore the warning prompt, please consider carefully wheth
 
 If you are a Windows user, you may need to run VS Code with administrator privileges. For Linux and Mac users, Code must not be installed in a read-only location and you must have write permissions.
 
-### 3. Update VSCode
-
-Please note that after each update of VSCode, you need to repeat the steps to re-enable the gradient effect.
-
-### 4. Switch to Other Themes
-
-Please note that if you have enabled the gradient effect and want to switch to another theme, you can first disable the gradient effect and then choose another theme, otherwise the gradient theme will affect the colors of other themes.
-
 # Compatibility
 
 This theme is still being updated and optimized. I mainly use HTML, CSS, JS, TS, Vue, React, etc. for development, so although these languages and frameworks look good, other languages and frameworks may not be suitable for the theme. If you find any obvious problems, you can raise an issue, and I will resolve it as soon as possible.
