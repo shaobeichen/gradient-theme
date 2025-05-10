@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/shaobeichen/gradient-theme/compare/v1.13.1...v1.14.0) (2025-05-10)
+
+
+### Features
+
+* add auto reload when vscode version updated ([93b960a](https://github.com/shaobeichen/gradient-theme/commit/93b960a02596bc1d27da7243e7c45ed4473ecb36))
+
 ## [1.13.1](https://github.com/shaobeichen/gradient-theme/compare/v1.13.0...v1.13.1) (2025-05-10)
 
 
