@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/shaobeichen/gradient-theme/compare/v1.13.0...v1.13.1) (2025-05-10)
+
+
+### Bug Fixes
+
+* fix vscode 1.100 version html path update ([f380428](https://github.com/shaobeichen/gradient-theme/commit/f380428c579017b211a7a8b23bc969eb1fbb77ea))
+
 # [1.13.0](https://github.com/shaobeichen/gradient-theme/compare/v1.12.2...v1.13.0) (2024-11-07)
 
 
