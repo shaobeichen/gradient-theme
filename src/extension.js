@@ -47,6 +47,11 @@ const disableMessage = 'Gradient ' + disableName + 'd. ' + enableCommonMessage
  * @returns
  */
 function getResetContent() {
+  if (!fs.existsSync(htmlFile)) {
+    showMessage('Gradient Theme is not supported on this platform.')
+    return ''
+  }
+
   const html = fs.readFileSync(htmlFile, 'utf-8')
   const regex = new RegExp(
     `<style[^>]*${config.tagAttr}[^>]*>.*?</style>|<script[^>]*${config.tagAttr}[^>]*>.*?</script>`,
@@ -60,6 +65,11 @@ function getResetContent() {
  * 重置html文件，用于删除所有插件插入的style和script
  */
 function reset() {
+  if (!fs.existsSync(htmlFile)) {
+    showMessage('Gradient Theme is not supported on this platform.')
+    return ''
+  }
+
   const output = getResetContent()
   fs.writeFileSync(htmlFile, output, 'utf-8')
 }
@@ -68,6 +78,11 @@ function reset() {
  * enable命令后，启动主题样式插入逻辑
  */
 function install() {
+  if (!fs.existsSync(htmlFile)) {
+    showMessage('Gradient Theme is not supported on this platform.')
+    return ''
+  }
+
   const themeConfig = vscode.workspace.getConfiguration('gradientTheme')
   const css = themeConfig ? themeConfig.css : []
   const customCssOutHtml = css
