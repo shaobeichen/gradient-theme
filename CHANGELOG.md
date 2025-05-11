@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/shaobeichen/gradient-theme/compare/v1.15.1...v1.15.2) (2025-05-11)
+
+
+### Bug Fixes
+
+* add htm file no exists tips ([dd3523a](https://github.com/shaobeichen/gradient-theme/commit/dd3523ac1142f675ee7c8455e1c009796d0718b2))
+
 ## [1.15.1](https://github.com/shaobeichen/gradient-theme/compare/v1.15.0...v1.15.1) (2025-05-10)
 
 
