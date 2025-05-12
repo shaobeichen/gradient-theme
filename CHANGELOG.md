@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/shaobeichen/gradient-theme/compare/v1.15.2...v1.15.3) (2025-05-12)
+
+
+### Bug Fixes
+
+* fix workbench file path ([cb67ee2](https://github.com/shaobeichen/gradient-theme/commit/cb67ee2fa8615f7fc9e3362501ff7e68313012c0))
+
 ## [1.15.2](https://github.com/shaobeichen/gradient-theme/compare/v1.15.1...v1.15.2) (2025-05-11)
 
 
