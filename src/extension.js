@@ -30,6 +30,9 @@ if (!fs.existsSync(htmlFile)) {
 if (!fs.existsSync(htmlFile)) {
   htmlFile = path.join(base, 'electron-browser', 'workbench', 'workbench.esm.html')
 }
+if (!fs.existsSync(htmlFile)) {
+  htmlFile = path.join(base, 'electron-browser', 'workbench', 'workbench.html')
+}
 
 const enableCommonMessage = `VSCode must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.`
 
