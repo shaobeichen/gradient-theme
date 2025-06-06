@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/shaobeichen/gradient-theme/compare/v1.15.3...v1.16.0) (2025-06-06)
+
+
+### Features
+
+* add gradient developer theme ([926e776](https://github.com/shaobeichen/gradient-theme/commit/926e776f0c073161f1dd559991e1cacd27fa997d))
+
 ## [1.15.3](https://github.com/shaobeichen/gradient-theme/compare/v1.15.2...v1.15.3) (2025-05-12)
 
 
