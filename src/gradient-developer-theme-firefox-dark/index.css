@@ -1,0 +1,93 @@
+/**
+ * Copyright (c) 2024 shaobeichen <shaobeichen@outlook.com>
+ * All rights reserved.
+ */
+
+/* git 待提交数量徽章样式 */
+.activitybar > .content :not(.monaco-menu) > .monaco-action-bar .badge .badge-content {
+  background-image: linear-gradient(45deg, #3cd23a, #ffe300);
+  border-width: 0 !important;
+  color: rgb(70 70 70) !important;
+  font-weight: 700;
+}
+
+/* 选中标签栏上边框 */
+@keyframes tabBorderTopMoveGradient {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.tab-border-top.active {
+  --tab-border-top-color: transparent !important;
+  position: relative;
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.tab-border-top.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 1;
+  background-image: linear-gradient(to right, #eacd61, #ea618e, #3cec85, #61afea);
+  animation: tabBorderTopMoveGradient 3s infinite alternate;
+  background-size: 200%;
+}
+
+/* html标签属性 */
+:not(.cursor).mtk9 {
+  color: #569cd6;
+  background-image: linear-gradient(45deg, #0975ce, #90ccff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+/* html标签 */
+:not(.cursor).mtk7 {
+  color: #9cdcfe;
+  background-image: linear-gradient(150deg, #15dbe2, #efefef);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-style: italic;
+}
+
+:not(.cursor).mtk12 {
+  color: #fd619c;
+  background-image: linear-gradient(45deg, #ff4b8f, #fd619c, #ffd6e5);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+:not(.cursor).mtk4 {
+  color: #2de28b;
+  background-image: linear-gradient(150deg, #2de28b, #2de28b, #efefef);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+:not(.cursor).mtk15 {
+  color: #f5ff43;
+  background-image: linear-gradient(150deg, #f5ff43, #efefef);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+:not(.cursor).mtk5 {
+  color: #6b89ff;
+  background-image: linear-gradient(45deg, #6b89ff, #a47efa);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+:not(.cursor).mtk8 {
+  color: #c678dd;
+  background-image: linear-gradient(145deg, #f561f1, #ff96fc, #ffcffe);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

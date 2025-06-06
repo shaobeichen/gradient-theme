@@ -58,6 +58,11 @@
                 "label": "Gradient Modern Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/gradient-modern-dark/dark-modern.json"
+            },
+            {
+                "label": "Gradient Developer Theme Firefox Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-developer-theme-firefox-dark.json"
             }
         ],
         "commands": [

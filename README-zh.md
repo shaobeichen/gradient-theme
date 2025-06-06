@@ -65,6 +65,15 @@
         <td><img src="./images/gradient-modern-dark.png" width=600/></td>
         <td><img src="./images/gradient-atom-one-dark.png" width=600/></td>
     </tr>
+    <tr>
+        <td>
+            <b>Gradient Developer Theme Firefox Dark</b>
+            <div>基于 <a href="">Developer Theme</a> ，添加了渐变效果。</div>
+        </td> 
+    </tr>
+    <tr>
+        <td><img src="./images/gradient-developer-theme-firefox-dark.png" width=600/></td>
+    </tr>
 </table>
 
 # 灵感

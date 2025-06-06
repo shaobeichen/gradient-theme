@@ -65,7 +65,15 @@ To be honest, I was very mind at first, but after I ignored the "corrupted" warn
         <td><img src="./images/gradient-modern-dark.png" width=600/></td>
         <td><img src="./images/gradient-atom-one-dark.png" width=600/></td>
     </tr>
-
+    <tr>
+        <td>
+            <b>Gradient Developer Theme Firefox Dark</b>
+            <div>I added a gradient effect to in <a href="">Developer Theme</a> .</div>
+        </td> 
+    </tr>
+    <tr>
+        <td><img src="./images/gradient-developer-theme-firefox-dark.png" width=600/></td>
+    </tr>
 </table>
 
 # Inspiration
