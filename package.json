@@ -40,6 +40,11 @@
                 "path": "./themes/gradient-bearded-theme-arc.json"
             },
             {
+                "label": "Gradient Bearded Theme Arc Woodfishhhh",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gradient-bearded-theme-arc-woodfishhhh.json"
+            },
+            {
                 "label": "Gradient Monokai Pro Classic",
                 "uiTheme": "vs-dark",
                 "path": "./themes/gradient-monokai-pro-classic.json"

@@ -2,5 +2,8 @@
   "cSpell.words": [
     "monokai",
     "shaobeichen"
-]
+  ],
+  "files.associations": {
+    "*.json": "jsonc"
+  }
 }
