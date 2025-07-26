@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/shaobeichen/gradient-theme/compare/v1.17.0...v1.17.1) (2025-07-26)
+
+
+### Bug Fixes
+
+* add gradient-bearded-theme-arc-woodfishhhh doc ([55c89f5](https://github.com/shaobeichen/gradient-theme/commit/55c89f556c331d6ea40f2f6f3ae265aa0ff06fcb))
+
 # [1.17.0](https://github.com/shaobeichen/gradient-theme/compare/v1.16.0...v1.17.0) (2025-06-07)
 
 
