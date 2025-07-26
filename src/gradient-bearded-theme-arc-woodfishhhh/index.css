@@ -1,0 +1,295 @@
+/* git 待提交数量徽章样式 */
+.activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  background-image: linear-gradient(45deg, #eacd61, #ea618e) !important;
+  border-width: 0 !important;
+  color: rgb(70 70 70) !important;
+}
+
+/* 选中标签栏上边框 */
+@keyframes tabBorderTopMoveGradient {
+  from {
+    background-position: 0% !important;
+  }
+  to {
+    background-position: 100% !important;
+  }
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.tab-border-top.active {
+  --tab-border-top-color: transparent !important;
+  position: relative !important;
+}
+.tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom.tab-border-top.active:after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  z-index: 1000 !important;
+  background-image: linear-gradient(
+    to right,
+    #eacd61,
+    #ea618e,
+    #3cec85,
+    #61afea
+  ) !important;
+  animation: tabBorderTopMoveGradient 3s infinite alternate !important;
+  background-size: 200% !important;
+}
+
+/* html标签属性 */
+:not(.cursor).mtk9 {
+  background-image: linear-gradient(45deg, #eacd61, #ea618e) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+}
+/*html标签*/
+:not(.cursor).mtk10 {
+  background-image: linear-gradient(45deg, #00d4ff, #1a94ff) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+}
+/*字符串*/
+:not(.cursor).mtk13 {
+  background-image: linear-gradient(45deg, #00ff04, #00ff99) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+}
+/*声明，int,double,let等*/
+:not(.cursor).mtk15 {
+  background-image: linear-gradient(45deg, #b78aff, #f644ff) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+}
+:not(.cursor).mtk3 {
+  background-image: linear-gradient(45deg, #ff9900, #eaff00) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+}
+:not(.cursor).mtk12 {
+  background-image: linear-gradient(45deg, #22ecdb, #00bbff) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+}
+:not(.cursor).mtk16:matches(
+    .token.keyword.type.primitive,
+    .token.keyword.type.builtin
+  ) {
+  background-image: linear-gradient(45deg, #ff738a, #ff7349) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+}
+.mtk1:not(.cursor):not(.dyn-rule-2-34):not(.colorpicker-color-decoration) {
+  background-image: linear-gradient(
+    135deg,
+    /* 明确渐变方向 */ #ffc1e0,
+    /* 亮粉色 */ #ffd5c6,
+    /* 橙红色 */ #fff6c5,
+    /* 金色 */ #e0ffc1,
+    /* 草坪绿 */ #bdffff,
+    /* 青色 */ #c3e1ff,
+    /* 道奇蓝 */ #d7c4ff,
+    /* 中紫色 */ #ffc0ff,
+    /* 洋红色 */ #ffc8e5 /* 深粉色 */
+  ) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  font-weight: 700 !important;
+}
+
+/*以下为透明菜单，彩虹鼠标，发光行号*/
+/* 为代码编辑器中的特定文本添加发光效果，统一使用 currentColor 确保发光颜色与字体颜色一致 */
+span.mtk1,
+span.token.keyword,
+span.mtk2,
+span.token.function,
+span.token.operator,
+span.mtk3,
+span.token.variable,
+span.mtk12,
+span.token.array,
+span.mtk5,
+span.token.string,
+span.mtk4,
+span.token.comment,
+span.mtk20,
+span.token.special-symbol,
+span.mtk6,
+span.mtk7,
+span.mtk8,
+span.mtk9,
+span.mtk10,
+span.mtk11,
+span.mtk13,
+span.mtk14,
+span.mtk15,
+span.mtk16,
+span.mtk17,
+span.mtk18,
+span.mtk19 {
+  text-shadow: 0 0 30px currentColor !important;
+}
+
+/* 根据元素重要性调整发光强度 */
+span.token.keyword {
+  text-shadow: 0 0 30px currentColor !important; /* 语言关键字，高强度发光 */
+}
+
+span.token.function {
+  text-shadow: 0 0 30px currentColor !important; /* 函数方法名，高强度发光 */
+}
+
+span.token.operator {
+  text-shadow: 0 0 30px currentColor !important; /* 运算符号，高强度发光 */
+}
+
+span.token.variable,
+span.mtk3,
+span.mtk12,
+span.token.array {
+  text-shadow: 0 0 25px currentColor !important; /* 变量名、数组名字，中等强度发光 */
+}
+
+span.token.string,
+span.mtk5 {
+  text-shadow: 0 0 25px currentColor !important; /* 字符串常量，中等强度发光 */
+}
+
+span.token.comment,
+span.mtk4 {
+  text-shadow: 0 0 20px currentColor !important; /* 注释，低强度发光 */
+}
+
+span.token.special-symbol,
+span.mtk20 {
+  text-shadow: 0 0 20px currentColor !important; /* 特殊符号，低强度发光 */
+}
+
+/* 其他元素，较低强度发光 */
+span.mtk6,
+span.mtk7,
+span.mtk8,
+span.mtk9,
+span.mtk10,
+span.mtk11,
+span.mtk13,
+span.mtk14,
+span.mtk15,
+span.mtk16,
+span.mtk17,
+span.mtk18,
+span.mtk19 {
+  text-shadow: 0 0 15px currentColor !important;
+}
+
+/* 设置活动行号的颜色和发光效果 */
+div.active-line-number {
+  --vscode-editorLineNumber-activeForeground: #fff !important;
+  text-shadow: 0 0 20px currentColor !important;
+}
+
+/* 设置粘性小部件的背景为透明 */
+div.sticky-widget {
+  --vscode-editorStickyScroll-background: transparent !important;
+  backdrop-filter: blur(20px) brightness(110%) !important;
+}
+
+div.monaco-hover {
+  --vscode-editorHoverWidget-background: #ffffff !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* 添加柔和的阴影 */
+  border-radius: 4px !important; /* 圆角效果 */
+}
+
+div.cursor {
+  animation: 30s linear infinite alternate bp-animation !important;
+  background: linear-gradient(
+    to bottom,
+    /* 明确渐变方向 */ #ff2d95,
+    /* 亮粉色 */ #ff4500,
+    /* 橙红色 */ #ffd700,
+    /* 金色 */ #7cfc00,
+    /* 草坪绿 */ #00ffff,
+    /* 青色 */ #1e90ff,
+    /* 道奇蓝 */ #9370db,
+    /* 中紫色 */ #ff00ff,
+    /* 洋红色 */ #ff1493 /* 深粉色 */
+  ) !important;
+  background-size: 100% 1200% !important; /* 增加背景尺寸增强流动效果 */
+  border-radius: 2px !important;
+  overflow: visible !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important; /* 添加发光效果增强视觉 */
+}
+
+div.cursor::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: inherit !important;
+  background-size: 100% 1000% !important;
+  border-radius: 3px !important;
+  transform: scale(140%, 120%) !important;
+  filter: blur(4px) brightness(200%) !important;
+  z-index: -1 !important;
+}
+
+@keyframes bp-animation {
+  0% {
+    background-position: 0 0 !important;
+  }
+  20% {
+    background-position: 0 166.6% !important;
+  }
+  40% {
+    background-position: 0 333.3% !important;
+  }
+  60% {
+    background-position: 0 500% !important;
+  }
+  80% {
+    background-position: 0 666.6% !important;
+  }
+  100% {
+    background-position: 0 833.3% !important;
+  }
+}
+
+/* 快速输入小部件样式 */
+div.quick-input-widget {
+  --vscode-quickInput-background: transparent !important;
+  backdrop-filter: blur(20px) brightness(140%) !important;
+}
+
+/* 输入框样式 */
+div.monaco-inputbox {
+  --vscode-input-background: transparent !important;
+}
+
+/* 聚焦状态样式 */
+div.focused {
+  --vscode-quickInputList-focusBackground: #04395e80 !important;
+}

@@ -4,6 +4,7 @@
 ### Features
 
 * handle theme entry ([0d33193](https://github.com/shaobeichen/gradient-theme/commit/0d331930449271d6f1f6f372b7856b1d0efb9e66))
+* add Gradient Bearded Theme Arc Woodfishhhh with enhanced visual effects ([commit-hash](https://github.com/shaobeichen/gradient-theme/commit/commit-hash))
 
 # [1.16.0](https://github.com/shaobeichen/gradient-theme/compare/v1.15.3...v1.16.0) (2025-06-06)
 

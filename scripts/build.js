@@ -15,7 +15,7 @@ const config = {
 }
 
 config.themes = packageJson.contributes.themes.map((item) =>
-  item.path.replace('./themes/', '').replace('.json', '').replace('/', '-'),
+  item.path.replace('./themes/', '').replace('.json', '').replace(/\//g, '-'),
 )
 
 const folderPath = path.join(__dirname, '../dist')
