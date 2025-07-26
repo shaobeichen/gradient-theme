@@ -68,11 +68,16 @@
     <tr>
         <td>
             <b>Gradient Developer Theme Firefox Dark</b>
-            <div>基于 <a href="">Developer Theme</a> ，添加了渐变效果。</div>
+            <div>基于 <a href="">Developer Theme</a> ，添加了渐变效果。（私人付费定制不对外开放）</div>
         </td> 
+        <td>
+            <b>Gradient Bearded Theme Arc Woodfishhhh</b>
+            <div>基于 <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded Theme Arc</a> ，添加了渐变和发光效果。感谢 <a href="https://github.com/woodfishhhh">woodfishhhh</a> 的PR。</div>
+        </td>  
     </tr>
     <tr>
         <td><img src="./images/gradient-developer-theme-firefox-dark.png" width=600/></td>
+        <td><img src="./images/gradient-bearded-theme-arc-woodfishhhh.png" width=600/></td>
     </tr>
 </table>
 

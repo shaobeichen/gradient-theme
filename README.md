@@ -68,11 +68,16 @@ To be honest, I was very mind at first, but after I ignored the "corrupted" warn
     <tr>
         <td>
             <b>Gradient Developer Theme Firefox Dark</b>
-            <div>I added a gradient effect to in <a href="">Developer Theme</a> .</div>
+            <div>I added a gradient effect to in <a href="">Developer Theme</a> .（Private paid customization is not available to the public）</div>
         </td> 
+         <td>
+            <b>Gradient Bearded Theme Arc Woodfishhhh</b>
+            <div>We added a gradient and glow effect to in <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded Theme Arc</a> . Thanks for <a href="https://github.com/woodfishhhh">woodfishhhh</a> 's PR. </div>
+        </td>  
     </tr>
     <tr>
         <td><img src="./images/gradient-developer-theme-firefox-dark.png" width=600/></td>
+        <td><img src="./images/gradient-bearded-theme-arc-woodfishhhh.png" width=600/></td>
     </tr>
 </table>
 
