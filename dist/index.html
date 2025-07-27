@@ -127,7 +127,7 @@
   /*html标签*/
   /*字符串*/
   /*声明，int,double,let等*/
-  /*以下为透明窗口，彩虹鼠标，发光行号*/
+  /*以下为透明菜单，彩虹鼠标，发光行号*/
   /* 为代码编辑器中的特定文本添加发光效果，统一使用 currentColor 确保发光颜色与字体颜色一致 */
   /* 根据元素重要性调整发光强度 */
   /* 其他元素，较低强度发光 */
@@ -210,8 +210,7 @@
   -webkit-background-clip: text !important;
   font-weight: 700 !important;
 }
-.shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json :not(.cursor).mtk16:matches(.token.keyword.type.primitive,
-.token.keyword.type.builtin) {
+.shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json :not(.cursor).mtk16:matches(.token.keyword.type.primitive, .token.keyword.type.builtin) {
   background-image: linear-gradient(45deg, #ff738a, #ff7349) !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -303,11 +302,12 @@
 }
 .shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json div.sticky-widget {
   --vscode-editorStickyScroll-background: transparent !important;
-  backdrop-filter: blur(20px) brightness(110%) !important;
+  backdrop-filter: blur(4px) brightness(200%) !important;
 }
 .shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json div.monaco-hover {
-  --vscode-editorHoverWidget-background: #ffffff !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* 添加柔和的阴影 */
+  --vscode-editorHoverWidget-background: rgba(38, 48, 66, 0.6) !important;
+  backdrop-filter: blur(4px) brightness(200%) !important;
+  box-shadow: 0 0 3px 0px rgba(255, 255, 255, 0.6) !important; /* 添加柔和的阴影 */
   border-radius: 4px !important; /* 圆角效果 */
 }
 .shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json div.cursor {
@@ -354,7 +354,7 @@
 }
 .shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json div.quick-input-widget {
   --vscode-quickInput-background: transparent !important;
-  backdrop-filter: blur(20px) brightness(140%) !important;
+  backdrop-filter: blur(4px) brightness(200%) !important;
 }
 .shaobeichen-gradient-theme-themes-gradient-bearded-theme-arc-woodfishhhh-json div.monaco-inputbox {
   --vscode-input-background: transparent !important;
