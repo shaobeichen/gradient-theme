@@ -199,14 +199,12 @@ div.active-line-number {
 /* 设置粘性小部件的背景为透明 */
 div.sticky-widget {
   --vscode-editorStickyScroll-background: transparent !important;
-  backdrop-filter: blur(4px) brightness(200%) !important;
+  backdrop-filter: blur(20px) brightness(140%) !important;
 }
 
 div.monaco-hover {
   --vscode-editorHoverWidget-background: rgba(38, 48, 66, 0.6) !important;
-  backdrop-filter: blur(4px) brightness(200%) !important;
-  box-shadow: 0 0 3px 0px rgba(255, 255, 255, 0.6) !important; /* 添加柔和的阴影 */
-  border-radius: 4px !important; /* 圆角效果 */
+  backdrop-filter: blur(6px) brightness(140%) !important;
 }
 
 div.cursor {
@@ -268,7 +266,7 @@ div.cursor::after {
 /* 快速输入小部件样式 */
 div.quick-input-widget {
   --vscode-quickInput-background: transparent !important;
-  backdrop-filter: blur(4px) brightness(200%) !important;
+  backdrop-filter: blur(20px) brightness(140%) !important;
 }
 
 /* 输入框样式 */
