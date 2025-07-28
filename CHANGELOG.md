@@ -1,3 +1,17 @@
+# [1.18.0](https://github.com/shaobeichen/gradient-theme/compare/v1.17.0...v1.18.0) (2025-07-28)
+
+
+### Bug Fixes
+
+* add gradient-bearded-theme-arc-woodfishhhh doc ([55c89f5](https://github.com/shaobeichen/gradient-theme/commit/55c89f556c331d6ea40f2f6f3ae265aa0ff06fcb))
+* update gradient-bearded-theme-arc styles for improved visual effects ([47df881](https://github.com/shaobeichen/gradient-theme/commit/47df881afbeffaa6b25450aa5ae7cb42497197d4))
+* 调整 gradient-bearded-theme-arc-woodfishhhh 背景模糊和亮度效果以改善视觉体验 ([caa4d7f](https://github.com/shaobeichen/gradient-theme/commit/caa4d7f6a60dd7685a0dcb3a626b609c7b92cf9d))
+
+
+### Features
+
+* remove unused workbench-default.html and package.json files ([1b68e78](https://github.com/shaobeichen/gradient-theme/commit/1b68e7814279c1f238567a80f130757c4d4b3cee))
+
 ## [1.17.1](https://github.com/shaobeichen/gradient-theme/compare/v1.17.0...v1.17.1) (2025-07-27)
 
 
