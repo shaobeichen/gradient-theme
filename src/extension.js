@@ -27,6 +27,25 @@ if (!fs.existsSync(htmlFile)) {
 if (!fs.existsSync(htmlFile)) {
   htmlFile = path.join(base, 'electron-sandbox', 'workbench', 'workbench.esm.html')
 }
+// Support Trae CN (similar to Cursor)
+if (!fs.existsSync(htmlFile)) {
+  // Check if this is Trae CN by looking at the application path
+  const isTraeCN = require.main && require.main.filename.includes('Trae CN.app')
+  if (isTraeCN && fs.existsSync(path.join(base, 'electron-sandbox'))) {
+    // Create a symlink for Trae CN if electron-browser doesn't exist
+    try {
+      const electronBrowserPath = path.join(base, 'electron-browser')
+      if (!fs.existsSync(electronBrowserPath)) {
+        const electronSandboxPath = path.join(base, 'electron-sandbox')
+        // Instead of creating actual symlink (which requires admin rights),
+        // we'll just use the electron-sandbox path for Trae CN
+        htmlFile = path.join(electronSandboxPath, 'workbench', 'workbench.html')
+      }
+    } catch (error) {
+      console.error('Error handling Trae CN path:', error)
+    }
+  }
+}
 if (!fs.existsSync(htmlFile)) {
   htmlFile = path.join(base, 'electron-browser', 'workbench', 'workbench.esm.html')
 }
