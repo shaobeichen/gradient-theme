@@ -5,7 +5,7 @@
 [![](https://badgen.net/vs-marketplace/v/shaobeichen.gradient-theme)](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme)
 [![](https://badgen.net/vs-marketplace/i/shaobeichen.gradient-theme)](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme)
 [![](https://badgen.net/vs-marketplace/d/shaobeichen.gradient-theme)](https://marketplace.visualstudio.com/items?itemName=shaobeichen.gradient-theme)
-[![Ask DeepWiki]()](https://deepwiki.com/shaobeichen/gradient-theme)
+[![Ask DeepWiki](https://badgen.net/static/%E4%B8%AD%E6%96%87/Ask%20DeepWiki/blue)](https://deepwiki.com/shaobeichen/gradient-theme)
 
 English | [中文文档](./README-zh.md)
 
