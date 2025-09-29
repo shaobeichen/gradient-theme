@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/shaobeichen/gradient-theme/compare/v1.18.0...v1.19.0) (2025-09-29)
+
+
+### Features
+
+* update ignore （add trea cn） ([23d0d6b](https://github.com/shaobeichen/gradient-theme/commit/23d0d6b34fd6cc79d0d718278f2379c00bdf9d60))
+
 # [1.18.0](https://github.com/shaobeichen/gradient-theme/compare/v1.17.0...v1.18.0) (2025-07-28)
 
 
